@@ -1,0 +1,286 @@
+.workforce-identity-section {
+   
+    padding: 90px 20px 40px 20px;
+    
+    max-width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    border-radius: 15px;
+    
+  }
+  
+  .workforce-identity-title {
+    font-size: 28px;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 20px;
+    
+    letter-spacing: 2px;
+    transition: color 0.3s ease;
+  }
+  
+  .workforce-identity-description {
+    font-size: 1.2em;
+    color: #555;
+    line-height: 1.6;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 0 20px;
+    text-align: left;
+  }
+  
+  .workforce-identity-section:hover {
+    transform: translateY(-10px);
+    transition: all 0.3s ease;
+  }
+  
+  .workforce-identity-title:hover {
+    color: #fbb034; /* Highlight color */
+  }
+  
+  
+  
+
+
+  
+
+  .keyfeatures-container {
+    text-align: left;
+    margin-bottom: -33px;
+   
+}
+.Features{
+padding: 40px 50px;
+
+}
+.feature-heading {
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.features-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  .feature-point {
+    margin-bottom: 20px;
+    padding: 15px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 45%;
+    text-align: left;
+    transition: all 0.3s ease-in-out;
+
+    .feature-icon {
+      margin-bottom: 15px;
+      color: #007bff;
+    }
+
+    .feature-text {
+      font-size: 1rem;
+      color: #444;
+
+      strong {
+        color:#333;
+      }
+    }
+
+    &:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    }
+  }
+}
+
+.about-image {
+  text-align: center;
+  img {
+    /* max-width: 100%; */
+    height: 492px;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+}
+
+
+.title-below-para {
+    max-width: 700px; /* Optional: Limit the width of the paragraph for better readability */
+    margin: 0 auto; /* Center the paragraph */
+    padding-bottom: 30px;
+    font-size: 18px;
+  }
+
+
+
+  .unlocking-potential-section {
+    padding: 50px 0;
+    background-color: #f9f9f9;
+    text-align: center;
+  }
+  
+  .section-title {
+    font-size: 34px;
+    
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .section-description {
+    font-size: 1.2rem;
+    color: #555;
+    
+    max-width: 800px;
+    margin: 13px auto;
+  }
+  
+  .benefits-list {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    justify-content: center;
+  }
+  
+  .benefit-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  .benefit-image {
+    width: 80px; /* Adjust the width as needed */
+    height: 80px; /* Adjust the height to keep the image square */
+    object-fit: cover; /* Ensures the image fits well without distorting */
+    margin-bottom: 15px; /* Adds spacing between the image and text */
+    transition: transform 0.3s ease-in-out; /* Adds a smooth hover effect */
+  }
+  
+  .benefit-image:hover {
+    transform: scale(1.1); /* Slightly enlarges the image on hover */
+  }
+  
+  .benefit-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  }
+  
+  .benefit-content {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+  
+  .benefit-icon {
+    width: 60px;  /* Adjust size as needed */
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #e0e0e0;
+    border-radius: 50%;
+    padding: 10px;
+  }
+  
+  .benefit-text {
+    font-size: 1rem;
+    color: #666;
+    max-width: 500px;
+    text-align: left;
+  }
+  
+  .benefit-text strong {
+    font-weight: bold;
+    color: #333;
+  }
+  
+
+
+
+
+  .why-partner-with-securoak {
+    padding: 60px 20px;
+    background-color: #f4f6f9;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  .partner-with-securoak-title {
+    .section-title {
+        font-size: 34px;
+        color: #333;
+        margin-bottom: 20px;
+    }
+  }
+  
+  .section-description {
+    font-size: 1.1rem;
+    color: #333;
+    margin-bottom: 30px;
+    line-height: 1.6;
+  }
+  
+  .section-details {
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.6;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  @media (max-width: 768px) {
+    .section-title {
+      font-size: 1.8rem;
+    }
+  
+    .section-description {
+      font-size: 1rem;
+    }
+  
+    .section-details {
+      font-size: 0.95rem;
+    }
+  }
+  
+
+
+
+
+@media (max-width: 768px) {
+  .features-list {
+    flex-direction: column;
+    align-items: center;
+
+    .feature-point {
+      width: 80%;
+    }
+  }
+}
+
+
+
+
+  
+  @media (max-width: 768px) {
+    .workforce-identity-section {
+      padding: 40px 10px;
+    }
+  
+    .workforce-identity-title {
+      font-size: 2em;
+    }
+  
+    .workforce-identity-description {
+      font-size: 1.1em;
+    }
+  }
+  

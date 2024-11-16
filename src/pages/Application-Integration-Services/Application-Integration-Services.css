@@ -1,0 +1,146 @@
+.application-integration {
+    padding: 0 20px;  
+    padding-bottom: 0 !important;
+     background-color: #f9f9f9;
+    font-family: 'Inter', sans-serif;
+  }
+  
+  .keys-container {
+    max-width: 1000px;
+    margin: auto;
+  }
+  
+  .integration-title {
+    font-size: 34px;
+    color: #333;
+    text-align: center;
+    margin-bottom: 30px;
+  
+   
+   
+  }
+  
+  .integration-description,
+  .integration-details {
+    font-size: 17px;
+    line-height: 1.8;
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: 30px;
+  }
+  
+  .integration-description strong {
+    color: #007bb5;
+  }
+
+
+
+
+
+  .keys-section {
+    padding: 10px 0 50px 0px;
+    background-color: #f9f9f9;
+    text-align: center;
+  }
+  
+  .keys-section-title {
+    font-size: 34px;
+    
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .keys-section-description {
+    font-size: 1.2rem;
+    color: #555;
+    
+    max-width: 800px;
+    margin: 13px auto;
+  }
+  
+  .keys-list {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    justify-content: center;
+  }
+  
+  .keys-benefit-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+    
+   
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  
+  .keys-benefit-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  }
+  
+  .keys-benefit-image {
+    width: 80px; /* Adjust the width as needed */
+    height: 80px; /* Adjust the height to keep the image square */
+    object-fit: cover; /* Ensures the image fits well without distorting */
+    margin-bottom: 15px; /* Adds spacing between the image and text */
+    transition: transform 0.3s ease-in-out; /* Adds a smooth hover effect */
+  }
+  
+  .keys-benefit-image:hover {
+    transform: scale(1.1); /* Slightly enlarges the image on hover */
+  }
+  
+  .keys-benefit-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  }
+  
+  .keys-benefit-content {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+  
+  .keys-benefit-icon {
+    width: 60px;  /* Adjust size as needed */
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #e0e0e0;
+    border-radius: 50%;
+    padding: 10px;
+  }
+  
+  .keys-benefit-text {
+    font-size: 1rem;
+    color: #666;
+    max-width: 730px;
+    text-align: left;
+  }
+  
+  .keys-benefit-text strong {
+    font-weight: bold;
+    color: #333;
+  }
+  .application-integration img{
+    height: 400px;
+  }
+  
+  @media (max-width: 768px) {
+    .integration-title {
+      font-size: 2rem;
+    }
+  
+    .integration-description,
+    .integration-details {
+      font-size: 1rem;
+    }
+  }
+  

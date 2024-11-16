@@ -1,0 +1,138 @@
+.identity-governance-container {
+    padding: 50px 20px 10px 20px;
+    text-align: center;
+    max-width: 1000px;
+    margin: 0 auto;
+ 
+  }
+  
+  .identity-governance-title {
+    font-size: 2rem;
+    font-weight: 600;
+    color: #003366;
+    margin-bottom: 30px;
+  }
+  
+  .identity-governance-description {
+    font-size: 1.1rem;
+    color: #555;
+    line-height: 1.8;
+    margin-bottom: 20px;
+    text-align: justify;
+  }
+  
+
+
+
+  .why-partner-section {
+    padding: 40px 90px;
+    max-width: 100%;
+   
+    text-align: center;
+       
+        background: #E5F3FB;
+  }
+  
+  .why-partner-top {
+    margin-bottom: 30px;
+  }
+  
+  .why-partner-title {
+    font-size: 34px;
+  
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .why-partner-description {
+    font-size: 1.1em;
+    color: #555;
+    max-width: 700px;
+    margin: 0 auto;
+  }
+  
+  .why-partner-content {
+    display: flex;
+    align-items: flex-start;
+    text-align: left;
+  }
+  
+  .why-partner-image {
+    flex: 1;
+    padding-right: 20px;
+  }
+  
+  .image {
+    width: 100%;
+    height: 355px;
+    object-fit: cover;
+    border-radius: 8px;
+  }
+  
+  .why-partner-features {
+    flex: 2;
+  }
+  
+  .partner-features-list {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .partner-features-list li {
+    font-size: 1em;
+    color: #444;
+    margin-bottom: 15px;
+    padding-left: 20px;
+    position: relative;
+  }
+  
+  .partner-features-list li::before {
+    content: "•";
+    color: #333;
+    position: absolute;
+    left: 0;
+    font-size: 1.2em;
+    top: 2px;
+  }
+  
+
+  .securoak-benefit {
+    background-color: #f5f8fa;
+    padding: 20px 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    max-width: 800px;
+    margin: 30px auto;
+    font-family: 'Inter', sans-serif;
+  }
+  
+  .securoak-benefit p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #333;
+  }
+  
+  .securoak-benefit strong {
+    font-size: 1.3rem;
+    color: #003366ee;
+  }
+  
+  .securoak-benefit .highlight {
+    color: #1d72b8;
+    font-weight: bold;
+    text-decoration: underline;
+  }
+  
+
+
+  @media (max-width: 768px) {
+    .identity-governance-title {
+      font-size: 1.6rem;
+    }
+  
+    .identity-governance-description {
+      font-size: 1rem;
+    }
+  }
+  
