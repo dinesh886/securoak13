@@ -1,0 +1,158 @@
+.it-section{
+    background: #ffffff;
+}
+
+
+.it-discription p {
+    /* background: linear-gradient(135deg, #f5f7fa, #e4eefb); */
+    padding: 20px;
+    max-width: 900px;
+    margin: 0 auto;
+ 
+    border-radius: 8px;
+   text-align: center;
+    font-family: 'Inter', sans-serif;
+    font-size: 15px;
+    color: #333;
+    line-height: 1.8;
+    
+  }
+  .it-consulting-section {
+    background: #fff; 
+    padding: 40px 20px;
+    text-align: center;
+  }
+  
+  .it-consulting-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+  
+  .it-consulting-image {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 8px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease;
+  }
+  
+  .it-consulting-image:hover {
+    transform: scale(1.05); /* Slight zoom on hover */
+  }
+  
+  .it-consulting-text {
+    max-width: 650px;
+    font-family: 'Inter', sans-serif;
+    color: #333;
+    line-height: 1.8;
+  }
+  
+  .it-consulting-text h2 {
+    font-size: 32px;
+    color: #333; /* Brand color for title */
+    margin-bottom: 20px;
+  }
+  
+  .it-consulting-text p {
+    font-size: 1rem;
+    color: #555;
+    margin: 0;
+    padding: 10px 0;
+  }
+  
+  .it-image{
+    height: 250px;
+    border-radius: 12px;
+  }
+
+
+  
+
+.it-identify-cards{
+    
+        justify-content: space-around;
+       padding: 10px 50px;
+    
+}
+  .it-feature-heading {
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 30px;
+    text-align: center;
+  }
+  
+  .it-features-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  
+    .it-feature-point {
+      margin-bottom: 20px;
+      padding: 15px;
+      background: #fff;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      width: 45%;
+      text-align: left;
+      transition: all 0.3s ease-in-out;
+  
+      .it-feature-icon {
+        margin-bottom: 15px;
+        color: #007bff;
+      }
+  
+      .it-feature-text {
+        font-size: 1rem;
+        color: #444;
+  
+        strong {
+          color:#333;
+        }
+      }
+  
+      &:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+      }
+    }
+  }
+
+
+
+  .potential-card {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+    display: flex;
+    margin: 50px;
+}
+
+.potential-title{
+    color: #333;
+    font-size: 32px;
+}
+
+
+
+
+  
+  @media (max-width: 768px) {
+    .it-consulting-content {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .it-consulting-image {
+      max-width: 100%;
+    }
+  
+    .it-consulting-text {
+      text-align: left;
+    }
+  }
+  
