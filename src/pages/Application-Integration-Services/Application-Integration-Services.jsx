@@ -136,6 +136,7 @@ const ApplicationIntegrationServices = () => {
 
 <section className="journey-with-securoak">
       <h2 className="text-center journey-title">Journey With Securoak</h2>
+      <p className='title-below-para'>Partnering with Securoak for your WIAM journey means embracing a structured approach to identity management that unlocks your organization’s full potential.</p>
        <div className="container">
       <Card className="mb-4 governence-card">
       <Card.Body>

@@ -52,8 +52,8 @@ export default function Footer() {
               }}
             >
               <div className="text-white contact-inner">
-                <h2>Subscribe to our newsletter </h2>
-              <p>Subscribe for Securoak Updates </p>
+                <h2>Contact us for Securoak Services  </h2>
+              <p>Explore Securoak Solutions</p>
               </div>
             </div>
             <div className="col-lg-6 text-lg-end align-self-center">
@@ -147,7 +147,7 @@ export default function Footer() {
                     </span>
                   </span>
                 </div>
-                <div className="contact_one">
+                {/* <div className="contact_one">
                   <a
                     href="tel:+61288971340"
                     className="phone_number"
@@ -160,7 +160,7 @@ export default function Footer() {
                       <span className="text"> +61 28897 1340</span>
                     </span>
                   </a>
-                </div>
+                </div> */}
 
                 <div className="contact_two">
                   <a

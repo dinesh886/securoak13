@@ -16,6 +16,7 @@ import partner2 from '../../assests/Partnership/octa.jpg'
 import partner3 from '../../assests/Partnership/xm-cyber.jpg'
 import partner4 from '../../assests/Partnership/drata.jpg'
 import partners from '../../assests/Partnership/partnership2.jpg'
+import partner5 from '../../assests/Partnership/oktalogo.jpg'
 
 const Partner = () => {
   return (
@@ -51,7 +52,7 @@ const Partner = () => {
                     {/* <span className="titles">
                       Scalable infrastructure for future growth
                     </span> */}
-                      <img src={partner2} alt="" srcset="" />
+                      <img src={partner5} alt="" srcset="" />
                   </div>
                 </div>
                 <p className="sub_desc">
