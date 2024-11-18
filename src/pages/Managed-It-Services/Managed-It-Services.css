@@ -48,6 +48,10 @@ object-fit: cover;
 .service-content {
   flex: 2; /* Takes up 50% of the width */
   padding-left: 50px; /* Space between image and content */
+
+}
+.service-content ul{
+  height: 200px;
 }
 .service-content h3{
   margin-left: 30px;

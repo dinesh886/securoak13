@@ -2,7 +2,7 @@
 .procurement {
   
     padding: 40px 30px;
-    border-radius: 8px; /* Slightly rounded corners */
+  
     background-color: #e2e8f0; 
     max-width: 1200px; /* Limit width for better readability */
     margin: 30px auto; /* Centered with space around */
@@ -107,7 +107,7 @@
 .software-voip-solutions {
     background-color: #f7f9fb; /* Light background color */
     padding: 30px 20px;
-    border-radius: 12px;
+   
     max-width: 100%;
     margin: 0px auto;
     font-family: 'Inter', sans-serif;
@@ -142,7 +142,7 @@
   
   .licensing-card, .voip-card {
     background: #ffffff;
-    border-radius: 12px;
+   
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
     padding: 40px;
     width: calc(33.33% - 30px);
@@ -152,6 +152,23 @@
     transform: translateY(50px);
     animation: fadeInUp 0.8s forwards;
   }
+  
+  .licensing-card:hover, .voip-card:hover {
+    background-color: #000000e7; /* Change background to black */
+    color: #ffffff; /* Change text color to white */
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2); /* Darker box shadow for hover effect */
+    transform: translateY(-5px); /* Slight lift effect on hover */
+  }
+  
+  /* Optional: Adding a transition effect for icons */
+  .licensing-card:hover .card-icon, .voip-card:hover .card-icon h4{
+    color: #ffffff; /* Change icon color to white on hover */
+  }
+
+
+
+
+
   
   /* Animation for fading and sliding */
   .licensing-card:nth-child(1), .voip-card:nth-child(1) {
@@ -194,64 +211,77 @@
 
 
 
-.cybersecurity-integration {
-    background-color: #e2e8f0; 
-  padding: 60px 0;
-}
-
-.cybersecurity-container {
-  width: 90%;
-  margin: 0 auto;
-}
-
-.section-title {
-  text-align: center;
-  font-size: 32px;
-
-  color: #333;
+  .cybersecurity-integration {
+    background-color: #f4f7fa; /* Slightly lighter background */
+    padding: 80px 0; /* Increased padding for better spacing */
+  }
   
-}
+  .cybersecurity-container {
+    width: 90%;
+    margin: 0 auto;
+  }
+  
+  .section-title {
+    text-align: center;
+    font-size: 32px; /* Larger font size */
+    color: #333;
+    margin-bottom: 30px;
+  }
+  
+  .cybersecurity-features {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 30px;
+  }
+  
+  .cybersecurity-feature {
+    background-color: white;
+    padding: 40px 30px; /* Added padding for more spacious content */
+   
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    flex: 1 1 calc(33% - 20px); /* Flex for responsive design */
+    min-width: 280px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .cybersecurity-feature:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+  }
+  
+  .feature-icon {
+    font-size: 50px; /* Increased icon size */
+    color: #3498db; /* Icon color */
+    margin-bottom: 25px;
+  }
+  
+  h4 {
+    font-size: 22px; /* Larger heading */
+    font-weight: bold;
+    color: #34495e;
+    margin-bottom: 20px;
+  }
+  
+  p {
+    font-size: 1rem;
+    color: #7f8c8d;
+    line-height: 1.6;
+    margin-bottom: 0;
+  }
+  
 
-.cybersecurity-cards {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 30px;
-  margin-top: 20px;
-}
 
-.cybersecurity-card {
-  background-color: white;
-  padding: 25px;
-  border-radius: 10px;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-  text-align: center;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
 
-.cybersecurity-card:hover {
-  transform: translateY(-10px);
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
-}
 
-.card-icon {
-  font-size: 40px;
-  color: #3498db; /* Icon color */
-  margin-bottom: 20px;
-}
 
-h4 {
-  font-size: 1.5rem;
-  font-weight: bold;
-  color: #34495e;
-  margin-bottom: 15px;
-}
 
-p {
-  font-size: 1rem;
-  color: #7f8c8d;
-  line-height: 1.6;
-  margin-bottom: 0;
-}
+
+
+
+
+
 
 
 

@@ -43,16 +43,16 @@ export default function Home() {
                 <h2 className="title_two typing-animation"  data-aos="fade-up"
                   data-aos-delay="200">Securoak’s AI-Driven Cyber Solutions</h2>
                
-                {/* <h2 className="title_two highlight"  data-aos="fade-up"
+                <h2 className="title_two highlight"  data-aos="fade-up"
                   data-aos-delay="400"  style={{color:"#007bff"}}>Secure.Innovate.Thrive </h2>
-                 */}
+                
 
                 <div className="two_buttons" data-aos="fade-up" data-aos-delay="450">
                   <Link
                     to="/UpcommingEvents" 
                     aria-label="Learn more about our services"
                   >
-                    <div className="service">Upcomming Events</div>
+                    <div className="service">Upcoming Events</div>
                   </Link>
 
                   {/* <Link
