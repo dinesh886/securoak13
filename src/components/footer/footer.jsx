@@ -147,20 +147,7 @@ export default function Footer() {
                     </span>
                   </span>
                 </div>
-                {/* <div className="contact_one">
-                  <a
-                    href="tel:+61288971340"
-                    className="phone_number"
-                    aria-label="Call us at +61 28897 1340"
-                  >
-                    <span className="num_bold">
-                      <span>
-                        <IoLogoWhatsapp />
-                      </span>
-                      <span className="text"> +61 28897 1340</span>
-                    </span>
-                  </a>
-                </div> */}
+         
 
                 <div className="contact_two">
                   <a

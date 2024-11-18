@@ -48,12 +48,7 @@ export default function Service() {
                       <div className="cnt">{value.Desc}</div>
                       <button className="know_more">
                         {/* Use React Router's Link component for internal navigation */}
-                        <Link to={value.Link} aria-label={`Learn more about ${value.Title}`}>
-                          Know More
-                          <span className="arrow_right">
-                            <FaArrowRightLong aria-hidden="true" />
-                          </span>
-                        </Link>
+                     
                       </button>
                     </div>
                   </div>
