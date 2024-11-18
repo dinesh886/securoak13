@@ -53,7 +53,7 @@ export default function Footer() {
             >
               <div className="text-white contact-inner">
                 <h2>Contact us for Securoak Services  </h2>
-              <p>Explore Securoak Solutions</p>
+              <p>& Explore Securoak Solutions </p>
               </div>
             </div>
             <div className="col-lg-6 text-lg-end align-self-center">

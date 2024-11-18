@@ -9,9 +9,11 @@ const WhatsappIcon = () => {
   };
 
   return (
-    <div className="whatsapp-icon" onClick={handleClick}>
-      <FontAwesomeIcon icon={faWhatsapp} />
-    </div>
+    <>
+    </>
+    // <div className="whatsapp-icon" onClick={handleClick}>
+    //   <FontAwesomeIcon icon={faWhatsapp} />
+    // </div>
   );
 };
 
