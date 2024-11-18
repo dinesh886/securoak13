@@ -153,18 +153,7 @@
     animation: fadeInUp 0.8s forwards;
   }
   
-  .licensing-card:hover, .voip-card:hover {
-    background-color: #000000e7; /* Change background to black */
-    color: #ffffff; /* Change text color to white */
-    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2); /* Darker box shadow for hover effect */
-    transform: translateY(-5px); /* Slight lift effect on hover */
-  }
   
-  /* Optional: Adding a transition effect for icons */
-  .licensing-card:hover .card-icon, .voip-card:hover .card-icon h4{
-    color: #ffffff; /* Change icon color to white on hover */
-  }
-
 
 
 
@@ -254,12 +243,12 @@
   .feature-icon {
     font-size: 50px; /* Increased icon size */
     color: #3498db; /* Icon color */
-    margin-bottom: 25px;
+   
   }
   
-  h4 {
+.cyber-head {
     font-size: 22px; /* Larger heading */
-    font-weight: bold;
+   
     color: #34495e;
     margin-bottom: 20px;
   }

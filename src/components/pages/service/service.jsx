@@ -5,7 +5,7 @@ import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 
-
+import { Link } from 'react-router-dom';
 
 import Data from "./data";
 
@@ -51,15 +51,12 @@ export default function Service() {
                     <div className="text_color_white">
                       <div className="cnt">{value.Desc}</div>
                       <button className="know_more">
-                        <a
-                          href={value.Link}
-                          aria-label={`Learn more about ${value.Title}`}
-                        >
-                          Know More
-                          <span className="arrow_right">
-                            <FaArrowRightLong aria-hidden="true" />
-                          </span>
-                        </a>
+                      <Link to={value.Link} className="">
+            Know More
+            <span className="arrow_right">
+              <FaArrowRightLong aria-hidden="true" />
+            </span>
+          </Link>
                       </button>
                     </div>
                   </div>

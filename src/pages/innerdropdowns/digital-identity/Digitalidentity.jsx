@@ -96,7 +96,7 @@ const Digitalidentity = () => {
           <p>Home <i className="fa-solid fa-greater-than benner-icon"></i> identity Offerings <i className="fa-solid fa-greater-than benner-icon"></i> Digital Identity Transformation Program</p>
         </div>
       </div>
-      <Container className="digital-identity-container">
+      <Container className="digital-identity-container" id="digital-identity-container">
          
         {/* Identity Offerings Section */}
         {/* <h2 className="text-center mb-4 identity-offerings-title">Digital Identity Transformation Program</h2> */}

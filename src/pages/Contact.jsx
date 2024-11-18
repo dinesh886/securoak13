@@ -7,6 +7,36 @@ import ReCAPTCHA from "react-google-recaptcha";
 
 const ContactUs = () => {
 
+  const [selectedLocation, setSelectedLocation] = useState(0);
+  const [zoomedUrl, setZoomedUrl] = useState("");
+
+  const locations = [
+   
+    {
+      name: "Australia, Sydney",
+      address: "Level 49, 8 Parramatta Square,\n 10 Darcy Street, \n Parramatta, NSW 2150, Australia",
+       email:"contact@securoak.com",
+      mapUrl:
+        "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3314.84704696913!2d151.00177922507143!3d-33.81626001633842!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x43f9223834d19db3%3A0x50b50ddc5274ef27!2sDAIMLINC%20PTY%20LTD!5e0!3m2!1sen!2sin!4v1731925613350!5m2!1sen!2sin",
+  
+      },
+      {
+        name: "India, Chennai",
+        address: `Securoak Consulting LLP
+    Office No: 334, Regus Shyamal Gardens,
+    136, Arcot Road, 3rd Floor,
+    Shyamala Towers, Saligramam,
+    Chennai, Tamil Nadu - 600093`,
+    email:"contact@securoak.com",
+        mapUrl:
+         "https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3886.804254434122!2d80.1960446741216!3d13.048128313197774!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2s!5e0!3m2!1sen!2sin!4v1731925719340!5m2!1sen!2sin",
+      
+        },
+  ];
+  const handleLocationChange = (index) => {
+    setSelectedLocation(index);
+  };
+
   const [formValues, setFormValues] = useState({
     firstName: "",
     lastName: "",
@@ -332,19 +362,61 @@ const ContactUs = () => {
 </div>
 
       </div>
-{/* 
-      <div className="map">
-        <h2>Our Location</h2>
-        <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3888.7855007277535!2d80.09000407424969!3d12.921503487389293!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a525e8201397fd9%3A0xa763e73edb713086!2sKaikoduppom%20Old%20Age%20Home%20%26%20Charitable%20Trust%20(Regd.%2C)!5e0!3m2!1sen!2sin!4v1727437580649!5m2!1sen!2sin"
-          width="100%"
-          height="450"
-          style={{ border: 0 }}
-          allowFullScreen=""
-          loading="lazy"
-          referrerPolicy="no-referrer-when-downgrade"
-        ></iframe>
-      </div> */}
+      <div className="map-container">
+      {/* <h2 className="our-location">Our Locations</h2> */}
+
+      {/* Buttons */}
+      <div className="location-buttons">
+        {locations.map((location, index) => (
+          <button
+            key={index}
+            className={`location-btn ${
+              selectedLocation === index ? "active" : ""
+            }`}
+            onClick={() => handleLocationChange(index)}
+          >
+            {location.name}
+          </button>
+        ))}
+      </div>
+
+      {/* Two-Column Layout */}
+      <div className="location-content">
+        {/* Left: Map */}
+        <div className="map-column">
+          <iframe
+            src={locations[selectedLocation].mapUrl}
+            width="100%"
+            height="350"
+            style={{ border: 0 }}
+            allowFullScreen=""
+            loading="lazy"
+            referrerPolicy="no-referrer-when-downgrade"
+            title="Google Map"
+          ></iframe>
+        </div>
+
+       {/* Right: Address */}
+<div className="address-column">
+  <h3 className="location-title">{locations[selectedLocation].name}</h3>
+  <div className="location-details">
+    {/* <i className="fas fa-map-marker-alt location-icon"></i> */}
+    <p
+      className="location-address"
+      dangerouslySetInnerHTML={{
+        __html: locations[selectedLocation].address.replace(/\n/g, "<br />"),
+      }}
+    ></p>
+    <div className="email-container">
+      <i className="fa-regular fa-envelope email-icon"></i>
+      <h4 className="location-email">{locations[selectedLocation].email}</h4>
+    </div>
+  </div>
+  
+</div>
+
+      </div>
+    </div>
 
       <Footer />
     </>

@@ -2,13 +2,18 @@ import React, { useState } from 'react';
 import "./Outsourcing-services.css";
 import Header from "../../components/header/header";
 import Footer from "../../components/footer/footer";
-import banner from '../WorkforceIdentity/workforce2.jpg';
+import banner from '../../components/assests/Outsourcing/outsource.jpg';
 import Assesment from "../../pages/IdentityGovernance/assesment.png";
 import Strategy  from "../../pages/IdentityGovernance/stratagy.png";
 import Implementation from "../../pages/IdentityGovernance/implimentation.png";
 import Training from "../../pages/IdentityGovernance/training.png";
 import partner from "../../pages/IdentityGovernance/partner.jpg";
 import Support from "../../pages/IdentityGovernance/customer-service.png";
+import bpo from "../../components/assests/Outsourcing/outsource.jpg";
+import costeffective from "../../components/assests/Outsourcing/costeffective2.jpg";
+import globel_talent from "../../components/assests/Outsourcing/globel-talent2.jpg";
+import innovation from "../../components/assests/Outsourcing/innovation2.jpg";
+import itsource from "../../components/assests/Outsourcing/itsource2.jpg";
 
 
 const Outsourcingservices = () => {
@@ -20,27 +25,27 @@ const Outsourcingservices = () => {
     {
       title: "Comprehensive Business Process Outsourcing (BPO)",
       description: "We provide tailored BPO solutions that enable you to outsource non-core functions such as customer service, finance, human resources, and IT support. This allows your team to concentrate on strategic initiatives that drive growth while we manage routine tasks securely and efficiently.",
-      image: banner
+      image: bpo
     },
     {
       title: "Flexible IT Outsourcing",
       description: "Our IT outsourcing services encompass a range of functions, including application development, maintenance, and infrastructure management. Leveraging AI and machine learning, we enhance your technology capabilities while proactively managing cybersecurity risks, freeing you from the complexities of in-house resource management.",
-      image: banner
+      image: itsource
     },
     {
       title: "Access to Global Talent",
       description: "With our extensive network, you gain access to a diverse pool of skilled professionals, including cybersecurity experts and AI specialists. We connect you with talent that possesses the necessary expertise to meet your specific project requirements, ensuring your operations are supported by the best in the industry.",
-      image: banner
+      image: globel_talent
     },
     {
       title: "Cost-Effective Solutions",
       description: "By outsourcing with Securoak, you can significantly reduce operational costs. Our solutions are designed to maximize value while minimizing overhead, enabling you to allocate resources more efficiently, especially towards innovation and security initiatives.",
-      image: banner
+      image: costeffective
     },
     {
       title: "Focus on Innovation",
       description: "Outsourcing with us allows your team to focus on innovation and strategic initiatives. With less time spent on routine tasks, your organization can drive creativity and growth, fostering a competitive edge in the market. Our AI-driven insights further enhance decision-making processes, enabling proactive responses to emerging trends.",
-      image: banner
+      image: innovation
     }
   ];
 

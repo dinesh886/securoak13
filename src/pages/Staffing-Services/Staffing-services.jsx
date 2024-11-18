@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import "./Staffing-services.css";
 import Header from "../../components/header/header";
 import Footer from "../../components/footer/footer";
-import banner from '../WorkforceIdentity/workforce2.jpg';
+import banner from '../../components/assests/Outsourcing/staff.jpg';
 import Assesment from "../../pages/IdentityGovernance/assesment.png";
 import Strategy  from "../../pages/IdentityGovernance/stratagy.png";
 import Implementation from "../../pages/IdentityGovernance/implimentation.png";

@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./Managed-It-Services.css";
 import Header from "../../components/header/header";
-import banner from '../WorkforceIdentity/workforce2.jpg';
+import banner from './itpro.jpg';
 import Footer from "../../components/footer/footer";
 import Assesment from "../../pages/IdentityGovernance/assesment.png";
 import support from "./support.jpg";

@@ -1,7 +1,7 @@
 import React from 'react'
 import Header from "../../components/header/header";
 import Footer from "../../components/footer/footer";
-import banner from '../WorkforceIdentity/workforce2.jpg';
+import banner from './procure.jpg';
 import "./It-Procurement.css"
 import security from "../WorkforceIdentity/productivity.png";
 import productivity from "../WorkforceIdentity/productivity2.png";
@@ -244,7 +244,7 @@ Embarking on your procurement journey with Securoak is both straightforward and 
         <div className="feature-icon">
           <i className="fas fa-shield-virus"></i>
         </div>
-        <h4>Proactive Threat Management</h4>
+        <h4 className='cyber-head'>Proactive Threat Management</h4>
         <p>
           Our procurement services include robust cybersecurity solutions that protect your IT assets from potential threats, ensuring your hardware and software are secured from the outset.
         </p>
@@ -254,7 +254,7 @@ Embarking on your procurement journey with Securoak is both straightforward and 
         <div className="feature-icon">
           <i className="fas fa-robot"></i>
         </div>
-        <h4>AI-Powered Security Solutions</h4>
+        <h4  className='cyber-head'>AI-Powered Security Solutions</h4>
         <p>
           We offer advanced cybersecurity solutions powered by artificial intelligence, providing real-time threat detection and response capabilities to safeguard your organization against evolving risks.
         </p>
@@ -264,7 +264,7 @@ Embarking on your procurement journey with Securoak is both straightforward and 
         <div className="feature-icon">
           <i className="fas fa-balance-scale"></i>
         </div>
-        <h4>Compliance and Risk Assessment</h4>
+        <h4  className='cyber-head'>Compliance and Risk Assessment</h4>
         <p>
           We help assess your compliance with industry standards and regulations, ensuring that your IT environment meets the necessary security benchmarks.
         </p>
