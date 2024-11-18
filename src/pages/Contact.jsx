@@ -32,7 +32,7 @@ const ContactUs = () => {
     e.preventDefault();
 
     if (!isSubscribed) {
-      alert("You must agree to be emailed.");
+      console.log("You must agree to be emailed.");
       return;
     }
 
