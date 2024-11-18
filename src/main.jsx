@@ -23,7 +23,7 @@ import HdigitalIdentity from "./components/pages/HomeDigitalIdentity/HdigitalIde
 import IdentityGovernance from "./components/pages/IdentityGovernance/IdentityGovernance";
 import WhoWeAre from "./components/pages/Who-We-Are/WhoWeAre";
 import WhyWeStandOut from "./components/pages/Why-WeStand-Out/WhyWeStandOut";
-import UpcomingEvents from "./components/pages/UpcomingEvents/UpcomingEvents";
+import UpcomingEvents from "./components/pages/UpcomingEvents/upcoming-events";
 import ClientTestimonial from "./components/pages/Testimonial/ClientTestimonial";
 
 

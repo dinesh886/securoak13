@@ -19,7 +19,7 @@ import Discaimer from "./pages/Disclaimer.jsx";
 import Client from "./components/pages/clients/client.jsx";
 import Whypartner from "./pages/PartnerwithUs/Whypartner.jsx";
 import Digitalidentity from "./pages/innerdropdowns/digital-identity/Digitalidentity.jsx";
-import UpcomingEvents from "./components/pages/UpcomingEvents/UpcomingEvents.jsx";
+import UpcomingEvents from "./components/pages/UpcomingEvents/upcoming-events.jsx";
 import WorkforceIdentity from "./pages/WorkforceIdentity/WorkforceIdentity.jsx";
 import IdentityGovernance from "./pages/IdentityGovernance/IdentityGovernance.jsx";
 import PrivilegedAccessManagement from "./pages/Privileged-Access-Management/Privileged-Access-Management.jsx";
@@ -60,7 +60,7 @@ function App() {
         <Route path="/Client" element={<Client />} /> 
         <Route path="/WhypartnerwithUs" element={<Whypartner />} /> 
         <Route path="/Digital-Identity-Transformation" element={<Digitalidentity />} /> 
-        <Route path="/UpcomingEvents" element={<UpcomingEvents />} /> 
+        <Route path="/upcoming-events" element={<UpcomingEvents />} /> 
         <Route path="/Workforce-Identity" element={<WorkforceIdentity />} /> 
         <Route path="/IdentityGovernance" element={<IdentityGovernance />} /> 
         <Route path="/PrivilegedAccessManagement" element={<PrivilegedAccessManagement />} /> 

@@ -14,11 +14,11 @@
   }
   
   .identity-governance-description {
-    font-size: 1.1rem;
+    font-size: 16px;
     color: #555;
     line-height: 1.8;
     margin-bottom: 20px;
-    text-align: justify;
+    text-align: center;
   }
   
 
@@ -132,7 +132,7 @@
     }
   
     .identity-governance-description {
-      font-size: 1rem;
+      font-size: 15px;
     }
   }
   .journey-with-securoak{

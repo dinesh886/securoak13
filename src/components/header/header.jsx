@@ -100,7 +100,7 @@ function Header({ aboutPage, identityPage }) {
         },
       ],
     },
-    { Title: "Events", Link: "/securoak12/UpcomingEvents" },
+    { Title: "Events", Link: "/securoak12/upcoming-events" },
     { Title: "Contact Us", Link: "/securoak12/ContactUs" },
   ];
 

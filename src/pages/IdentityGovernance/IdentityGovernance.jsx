@@ -13,6 +13,7 @@ import Support from "./customer-service.png";
 import img1 from './img1.jpg'
 import img2 from './img2.jpg'
 import img3 from './img3.jpg'
+import banner1 from './934721.jpg'
 import { Card, ListGroup } from 'react-bootstrap'; // Assuming you're using Bootstrap for card and list styling
 
 
@@ -75,13 +76,13 @@ const IdentityGovernance = () => {
         {/* Image and Overlay Section */}
         <div className="identity-image-container">
         <img
-          src={banner}
+          src={banner1}
           alt="A depiction of the company's philosophy"
           className="identity-page-image"
         />
         <div className="overlay-text">
           <h1>Identity Governance with Securoak </h1>
-          <p>Home <i className="fa-solid fa-greater-than benner-icon"></i>ser(WIAM)</p>
+          <p>Home <i className="fa-solid fa-greater-than benner-icon"></i>services<i className="fa-solid fa-greater-than benner-icon"></i> idendity goverence <i className="fa-solid fa-greater-than benner-icon"></i> (WIAM)</p>
         </div>
       </div>
 

@@ -18,6 +18,7 @@ import { useEffect } from 'react';
 import img1 from './img1.jpg'
 import img2 from './img2.jpg'
 import img3 from './img3.jpg'
+import banner1 from './service21.jpg'
 const WorkforceIdentity = () => {
 
     const potentialItems = [
@@ -47,7 +48,7 @@ const WorkforceIdentity = () => {
        {/* Image and Overlay Section */}
        <div className="identity-image-container">
         <img
-          src={banner}
+          src={banner1}
           alt="A depiction of the company's philosophy"
           className="identity-page-image"
         />
@@ -146,7 +147,7 @@ const WorkforceIdentity = () => {
       <h2 className="text-center journey-title">Journey With Securoak</h2>
       <p className='title-below-para'>Partnering with Securoak for your WIAM journey means embracing a structured approach to identity management that unlocks your organization’s full potential.</p>
        <div className="container">
-      <Card className="mb-4 governence-card">
+      <Card className="governence-card">
       <Card.Body>
      <ListGroup variant="flush">
       {potentialItems.map((item, index) => (

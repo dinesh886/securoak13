@@ -14,6 +14,7 @@ import why2 from "../../components/assests/priviledge/security3.jpg";
 import img1 from './img1.jpg'
 import img2 from './img2.jpg'
 import img3 from './img3.jpg'
+import banner1 from './privilage.jpeg'
 
 import Support from "../../components/assests/priviledge/customer-service.png";
 import { Card, ListGroup } from 'react-bootstrap'; // Assuming you're using Bootstrap for card and list styling
@@ -66,7 +67,7 @@ const PrivilegedAccessManagement = () => {
        {/* Image and Overlay Section */}
        <div className="identity-image-container">
         <img
-          src={banner}
+          src={banner1}
           alt="A depiction of the company's philosophy"
           className="identity-page-image"
         />

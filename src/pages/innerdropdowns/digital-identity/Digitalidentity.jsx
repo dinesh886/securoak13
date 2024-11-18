@@ -13,6 +13,7 @@ import img1 from './img1.jpg'
 import img2 from './img2.jpg'
 import img3 from './img3.jpg'
 import './Digitalidentity.css'
+import banner1 from './service1.png'
 const Digitalidentity = () => {
   useEffect(() => {
     const script = document.createElement('script');
@@ -91,7 +92,7 @@ const Digitalidentity = () => {
       <Header identityPage={true} />
       <div className="identity-image-container">
         <img
-          src={banner}
+          src={banner1}
           alt="A depiction of the company's philosophy"
           className="identity-page-image"
         />
@@ -188,7 +189,7 @@ const Digitalidentity = () => {
     {/* Unlocking Business Potential Section */}
 {/* Unlocking Business Potential Section */}
 
-<section className="journey-with-securoak">
+<section className=" journey-with-securoak">
       <h2 className="text-center journey-title">Unlocking Business Potential</h2>
        <div className="container">
       <Card className="mb-4 governence-card">
@@ -251,7 +252,7 @@ const Digitalidentity = () => {
  */}
 
 
-      </Container>
+</Container>
       <Footer />
     </>
   );

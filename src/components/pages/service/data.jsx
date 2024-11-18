@@ -17,7 +17,7 @@ const Data = [
     ImageTwo:manage,
     Title: "IDENTITY SERVICES",
     Desc: "Encompass CIAM, WIAM, IG, PAM, Digital Identity Transformation, and Managed Support Services. These solutions enhance security, streamline access management, and ensure compliance while providing 24/7 support. Together, they empower organizations to protect sensitive data, optimize operations, and enhance customer and employee experiences in a secure environment.",
-    Link: "./#",
+    Link: "/#",
   },
   {
     Image: customer_back,
@@ -38,7 +38,7 @@ const Data = [
     ImageTwo: eye_one,
     Title: "Staffing & Outsourcing Services",
     Desc: "Empower organizations to streamline operations and focus on core competencies. Our tailored staffing solutions connect you with skilled professionals, while our outsourcing services manage non-core functions, enhancing efficiency and reducing costs. Together, we drive innovation and optimize resources for sustainable growth and success.",
-    Link: "/#",
+    Link: "/Digital-Identity-Transformation",
   },
   
   
