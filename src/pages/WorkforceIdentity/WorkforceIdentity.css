@@ -50,7 +50,7 @@
    
 }
 .Features{
-padding: 40px 50px;
+padding: 14px 50px;
 
 }
 .feature-heading {
@@ -59,6 +59,7 @@ padding: 40px 50px;
   color: #333;
   margin-bottom: 10px;
   text-align: center;
+  margin-top: 30px;
 }
 
 .features-list {
@@ -125,8 +126,8 @@ padding: 40px 50px;
   }
   
   .section-title {
-    font-size: 34px;
-    
+    font-size: 32px;
+    text-align: center;
     color: #333;
     margin-bottom: 20px;
   }
@@ -223,10 +224,11 @@ padding: 40px 50px;
   }
   
   .section-description {
-    font-size: 1.1rem;
+    font-size: 15px;
     color: #333;
     margin-bottom: 30px;
     line-height: 1.6;
+    text-align: center;
   }
   
   .section-details {

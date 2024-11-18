@@ -24,6 +24,11 @@ import WorkforceIdentity from "./pages/WorkforceIdentity/WorkforceIdentity.jsx";
 import IdentityGovernance from "./pages/IdentityGovernance/IdentityGovernance.jsx";
 import PrivilegedAccessManagement from "./pages/Privileged-Access-Management/Privileged-Access-Management.jsx";
 import ApplicationIntegrationServices from "./pages/Application-Integration-Services/Application-Integration-Services.jsx";
+import ItConsulting from "./pages/It-Consulting/It-Consulting.jsx";
+import Nocsoc from "./pages/Noc-soc/Noc-soc.jsx";
+import NetworkTelephonySolutions from "./pages/Network-Telephony-Solutions/Network-Telephony-Solutions.jsx";
+import ManagedItServices from "./pages/Managed-It-Services/ManagedItServices.jsx";
+import ItProcurement from "./pages/It-Procurement/It-Procurement.jsx";
 
 function App() {
   const [showWhatsapp, setShowWhatsapp] = useState(false);
@@ -60,6 +65,12 @@ function App() {
         <Route path="/IdentityGovernance" element={<IdentityGovernance />} /> 
         <Route path="/PrivilegedAccessManagement" element={<PrivilegedAccessManagement />} /> 
         <Route path="/ApplicationIntegrationServices" element={<ApplicationIntegrationServices />} /> 
+        <Route path="/it-consulting" element={<ItConsulting />} /> 
+        <Route path="/Noc-soc" element={<Nocsoc />} /> 
+        <Route path="/Network-Telephony-Solutions" element={<NetworkTelephonySolutions />} /> 
+        <Route path="/Managed-It-Services" element={<ManagedItServices />} /> 
+        <Route path="/It-Procurement"  element={<ItProcurement />} /> 
+
       </Routes>
 
 

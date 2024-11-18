@@ -31,6 +31,7 @@ const Identity = () => {
   };
 
   return (
+    
     <div className="identity-page" id="identify">
       <Header identityPage={true} />
 

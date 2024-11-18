@@ -71,7 +71,7 @@ function Header({ aboutPage, identityPage }) {
             { Title: "Workforce Identity and Access Management", Link: "/securoak12/Workforce-Identity" },
             { Title: "Identity Governance", Link: "/securoak12/Identitygovernance" },
             { Title: "Privilege Access Management", Link: "/securoak12/Privilegedaccessmanagement" },
-            { Title: "Managed Support Services", Link: "/securoak12/Managedsupportservices" }
+            // { Title: "Managed Support Services", Link: "/securoak12/Managedsupportservices" }
           ],
         },
         { Title: "Application Integration Services",
@@ -82,11 +82,11 @@ function Header({ aboutPage, identityPage }) {
           Title: "Infrastructure & Managed Services",
           // Link: "/securoak12/", 
           Submenu: [
-            { Title: "IT Consulting", Link: "/securoak12/Digital-Identity-Transformation" },
-            { Title: "NOC & SOC ", Link: "/securoak12/identity-access-management/access-governance" },
-            { Title: "Network and Telephony Solutions", Link: "/securoak12/identity-access-management/sso" },
-            { Title: "Managed IT Services", Link: "/securoak12/identity-access-management/mfa" },
-            { Title: "IT Procurement", Link: "/securoak12/identity-access-management/mfa" },
+            { Title: "IT Consulting", Link: "/securoak12/it-consulting" },
+            { Title: "NOC & SOC ", Link: "/securoak12/Noc-soc" },
+            { Title: "Network and Telephony Solutions", Link: "/securoak12/Network-Telephony-Solutions"  },
+            { Title: "Managed IT Services", Link: "/securoak12/Managed-It-Services" },
+            { Title: "IT Procurement", Link: "/securoak12/It-procurement" },
           ],
         },
         { 

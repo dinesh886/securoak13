@@ -1,0 +1,84 @@
+.managedservice-description {
+    
+    padding: 30px;
+    border-radius: 12px;
+    
+    text-align: center;
+    max-width: 800px;
+    margin: 20px auto;
+  }
+  
+  .managedservice-title {
+    font-size: 2rem;
+    color: #007bff;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+  }
+  
+  .managedservice-text {
+    font-size: 15px;
+    text-align: center;
+    color: #333;
+    line-height: 1.6;
+  }
+  
+
+ /* Wrapper for the service image and content */
+.service-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start; /* Align top for image and content */
+  margin-top: 20px;
+}
+
+/* Left column: image */
+.service-image {
+  flex: 1; /* Takes up 50% of the width */
+  max-width: 400px;
+  display: flex;
+  justify-content: center;
+}
+.service-image img{
+height: 300px;
+width: 600px;
+object-fit: cover;
+
+}
+/* Right column: content */
+.service-content {
+  flex: 2; /* Takes up 50% of the width */
+  padding-left: 50px; /* Space between image and content */
+}
+.service-content h3{
+  margin-left: 30px;
+
+}
+.managed-container{
+  padding: 30px 180px;
+}
+/* Description below the buttons */
+.service-navigation {
+  margin-top: 20px; /* Space between content and buttons */
+  display: flex;
+  margin-left: 33px;
+  width: 100%;
+}
+.prev-btn{
+  margin-right: 20px;
+}
+.next-btn{
+  margin-right: -20xp;
+}
+.prev-btn, .next-btn {
+  background-color: #007BFF;
+  color: #fff;
+  padding: 10px 50px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+ 
+}
+
+.prev-btn:hover, .next-btn:hover {
+  background-color: #0056b3;
+}
