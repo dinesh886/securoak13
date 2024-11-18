@@ -38,7 +38,7 @@ const Data = [
     ImageTwo: eye_one,
     Title: "Staffing & Outsourcing Services",
     Desc: "Empower organizations to streamline operations and focus on core competencies. Our tailored staffing solutions connect you with skilled professionals, while our outsourcing services manage non-core functions, enhancing efficiency and reducing costs. Together, we drive innovation and optimize resources for sustainable growth and success.",
-    Link: "/Digital-Identity-Transformation",
+    Link: "/staffing-services",
   },
   
   
