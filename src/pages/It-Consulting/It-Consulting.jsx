@@ -34,7 +34,7 @@ const ItConsulting = () => {
           className="identity-page-image"
         />
         <div className="overlay-text">
-          <h1>IT Consulting </h1>
+          <h1>IT Consultin </h1>
           <p>Home <i className="fa-solid fa-greater-than benner-icon"></i> Services <i className="fa-solid fa-greater-than benner-icon"></i> Infrastructure & Managed Services <i className="fa-solid fa-greater-than benner-icon"></i> IT Consulting</p>
         </div>
       </div>
