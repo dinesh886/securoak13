@@ -15,13 +15,16 @@ import Col from "react-bootstrap/Col";
 import { Card, ListGroup } from 'react-bootstrap'; // Assuming you're using Bootstrap for card and list styling
 import { FaShieldAlt, FaRegLightbulb,FaClipboardCheck,FaRocket,FaLock, FaCloudUploadAlt,FaTachometerAlt, FaLayerGroup, FaPlug, FaChartLine } from 'react-icons/fa';
 import { useEffect } from 'react';
+import img1 from './img1.jpg'
+import img2 from './img2.jpg'
+import img3 from './img3.jpg'
 const WorkforceIdentity = () => {
 
     const potentialItems = [
-        {  text: "Assessment: We start with a comprehensive assessment of your current identity management systems, identifying gaps and opportunities for improvement. Our AI tools analyze existing workflows and highlight areas where security can be enhanced" },
-        { text: "Tailored Solutions: Our experts will design a customized WIAM strategy aligned with your unique business requirements and security standards. With AI at the core, we ensure that every aspect of your access management is not just secure but also intelligent, adapting to new threats as they emerge." },
-        {  text: "Implementation: We facilitate a smooth implementation of our solutions, ensuring minimal disruption to your operations while enhancing security protocols. Our deployment process incorporates automated monitoring to detect and respond to threats in real-time." },
-        {  text: "Training and Support: Our commitment extends beyond deployment; we provide ongoing training for your teams, empowering them to maximize the benefits of our AI-enhanced WIAM solutions and ensuring sustained success. Continuous support includes AI-driven insights to fine-tune security measures based on evolving threats." },
+        {  image:img1, title:"Assessment",text: " We start with a comprehensive assessment of your current identity management systems, identifying gaps and opportunities for improvement. Our AI tools analyze existing workflows and highlight areas where security can be enhanced" },
+        {  image:img2, title:"Tailored Solutions",text: "Our experts will design a customized WIAM strategy aligned with your unique business requirements and security standards. With AI at the core, we ensure that every aspect of your access management is not just secure but also intelligent, adapting to new threats as they emerge." },
+        {  image:img3, title:"Implementation", text: " We facilitate a smooth implementation of our solutions, ensuring minimal disruption to your operations while enhancing security protocols. Our deployment process incorporates automated monitoring to detect and respond to threats in real-time." },
+        {  image:img1, title:"Training and Support",text: " Our commitment extends beyond deployment; we provide ongoing training for your teams, empowering them to maximize the benefits of our AI-enhanced WIAM solutions and ensuring sustained success. Continuous support includes AI-driven insights to fine-tune security measures based on evolving threats." },
       
       ];
 
@@ -139,15 +142,47 @@ const WorkforceIdentity = () => {
       </Col> */}
     </Row>
 
-
-
-
     <section className="journey-with-securoak">
+      <h2 className="text-center journey-title">Journey With Securoak</h2>
+      <p className='title-below-para'>Partnering with Securoak for your WIAM journey means embracing a structured approach to identity management that unlocks your organization’s full potential.</p>
+       <div className="container">
+      <Card className="mb-4 governence-card">
+      <Card.Body>
+     <ListGroup variant="flush">
+      {potentialItems.map((item, index) => (
+        <div
+          key={index}
+          className={`card-main d-flex mb-1
+             ${index % 2 === 0 ? 'flex-row-reverse' : 'flex-row'}`}
+        >
+          {/* Text Column */}
+          <div className="content flex-grow-1 d-flex flex-column align-items-center justify-content-start">
+           <h4>{item.title}</h4>
+            <ListGroup.Item className="list-content">
+              {/* <div className="list-icon">{item.icon}</div> */}
+              <span>{item.text}</span>
+            </ListGroup.Item>
+          </div>
+
+          {/* Image Column */}
+          <div className="card-image d-flex flex-column align-items-center justify-content-start">
+            <img src={item.image}  className="unlock-img" alt="" />
+             
+          </div>
+        </div>
+      ))}
+    </ListGroup>
+  </Card.Body>
+</Card>
+</div>
+</section>
+
+
+    {/* <section className="journey-with-securoak">
     <div className='text-center'>
   <h2 className="c journey-title">Journey With Securoak</h2>
   <p className='title-below-para'>Partnering with Securoak for your WIAM journey means embracing a structured approach to identity management that unlocks your organization’s full potential.</p>
 </div>
-
       <Card className="mb-4 journey-card">
         <Card.Body className="d-flex flex-row">
           <div className="content-column">
@@ -173,7 +208,7 @@ const WorkforceIdentity = () => {
           </div>
         </Card.Body>
       </Card>
-    </section>
+    </section> */}
 
      
     {/* Unlocking Your Potential section */}
