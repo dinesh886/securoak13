@@ -52,7 +52,7 @@ export default function Home() {
                     to="/UpcommingEvents" 
                     aria-label="Learn more about our services"
                   >
-                    <div className="service">Upcomming Events</div>
+                    <div className="service">Upcoming Events</div>
                   </Link>
 
                   {/* <Link

@@ -12,6 +12,12 @@ const WhyWeStandOut = () => {
         partnerships, we prioritize client-centered innovation, operational efficiency, and proactive risk management.
       </p>
       <div className="features-grid">
+
+      <div className="feature">
+          <FaLock className="icon" />
+          <h3>Identity Management</h3>
+          <p>Comprehensive identity and access management to enhance security and control.</p>
+        </div>
         <div className="feature">
           <FaShieldAlt className="icon" />
           <h3>AI-Powered Cybersecurity</h3>
@@ -27,11 +33,7 @@ const WhyWeStandOut = () => {
           <h3>Seamless Integration</h3>
           <p>Effortless integration with existing systems to ensure smooth and continuous functionality.</p>
         </div>
-        <div className="feature">
-          <FaLock className="icon" />
-          <h3>Identity Management</h3>
-          <p>Comprehensive identity and access management to enhance security and control.</p>
-        </div>
+       
       </div>
     </section>
   );
