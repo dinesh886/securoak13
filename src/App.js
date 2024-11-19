@@ -29,6 +29,8 @@ import Nocsoc from "./pages/Noc-soc/Noc-soc.jsx";
 import NetworkTelephonySolutions from "./pages/Network-Telephony-Solutions/Network-Telephony-Solutions.jsx";
 import ManagedItServices from "./pages/Managed-It-Services/ManagedItServices.jsx";
 import ItProcurement from "./pages/It-Procurement/It-Procurement.jsx";
+import Staffingservices from "./pages/Staffing-Services/Staffing-services.jsx";
+import Outsourcingservices from "./pages/Outsourcing-services/Outsourcing-services.jsx";
 
 function App() {
   const [showWhatsapp, setShowWhatsapp] = useState(false);
@@ -70,6 +72,8 @@ function App() {
         <Route path="/Network-Telephony-Solutions" element={<NetworkTelephonySolutions />} /> 
         <Route path="/Managed-It-Services" element={<ManagedItServices />} /> 
         <Route path="/It-Procurement"  element={<ItProcurement />} /> 
+        <Route path="/staffing-services"  element={<Staffingservices />} /> 
+        <Route path="/outsourcing-services"  element={<Outsourcingservices />} /> 
 
       </Routes>
 

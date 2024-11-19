@@ -78,7 +78,7 @@ padding: 14px 50px;
     transition: all 0.3s ease-in-out;
 
     .feature-icon {
-      margin-bottom: 15px;
+      /* margin-bottom: 15px; */
       color: #007bff;
     }
 

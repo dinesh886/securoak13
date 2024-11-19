@@ -147,21 +147,25 @@ export default function Footer() {
                     </span>
                   </span>
                 </div>
+
                 <div className="address mt-4">
                   <span className="add-bold">
                     <span>
                       <FaLocationDot />
                     </span>
                     <span className="text">
-                      Securoak Consulting LLP
-                      Office No:334, Regus Shyamal Gardens,
-                      136, Arcot Road, 3rd Floor,
-                      Shyamala Towers, Saligramam,
-                      Chennai, Tamil Nadu - 600093
+
+                    Securoak Consulting LLP
+Office No:334, Regus Shyamal Gardens,
+136, Arcot Road, 3rd Floor, 
+Shyamala Towers, Saligramam, 
+Chennai, Tamil Nadu - 600093
+
                     </span>
                   </span>
                 </div>
-                {/* <div className="contact_one">
+                <div className="contact_one">
+
                   <a
                     href="tel:+61288971340"
                     className="phone_number"
