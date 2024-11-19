@@ -34,7 +34,7 @@ export default function Footer() {
 
   return (
     <section className="footer_full" aria-labelledby="footer-heading">
-        
+
       <div
         className="cta overlay-primary py-50 text-center text-lg-start"
         style={{
@@ -52,8 +52,8 @@ export default function Footer() {
               }}
             >
               <div className="text-white contact-inner">
-                <h2>Subscribe to our newsletter </h2>
-              <p>Subscribe for Securoak Updates </p>
+                <h2>Contact us for Securoak Services  </h2>
+                <p>& Explore Securoak Solutions </p>
               </div>
             </div>
             <div className="col-lg-6 text-lg-end align-self-center">
@@ -154,6 +154,7 @@ export default function Footer() {
                       <FaLocationDot />
                     </span>
                     <span className="text">
+
                     Securoak Consulting LLP
 Office No:334, Regus Shyamal Gardens,
 136, Arcot Road, 3rd Floor, 
@@ -164,6 +165,7 @@ Chennai, Tamil Nadu - 600093
                   </span>
                 </div>
                 <div className="contact_one">
+
                   <a
                     href="tel:+61288971340"
                     className="phone_number"
@@ -176,7 +178,8 @@ Chennai, Tamil Nadu - 600093
                       <span className="text"> +61 28897 1340</span>
                     </span>
                   </a>
-                </div>
+                </div> */}
+
 
                 <div className="contact_two">
                   <a
@@ -201,14 +204,14 @@ Chennai, Tamil Nadu - 600093
               <div className="total_routes">
                 <div className="routes_pages">
                   <div className="policy_link">
-                    <Link to="/PrivacyPolicy"  onClick={(e) => {
-                        setTimeout(() => {
-                          const element = document.getElementById("privacy"); // Make sure the ID matches
-                          if (element) {
-                            element.scrollIntoView({ behavior: "smooth" });
-                          }
-                        }, 0);
-                      }}>
+                    <Link to="/PrivacyPolicy" onClick={(e) => {
+                      setTimeout(() => {
+                        const element = document.getElementById("privacy"); // Make sure the ID matches
+                        if (element) {
+                          element.scrollIntoView({ behavior: "smooth" });
+                        }
+                      }, 0);
+                    }}>
                       <span className="Policy">Privacy Policy</span>
                     </Link>
                   </div>
@@ -230,14 +233,14 @@ Chennai, Tamil Nadu - 600093
                   </div>
                   <span className="line">|</span>
                   <div className="policy_link">
-                    <Link to="/TermnsandConditions"  onClick={(e) => {
-                        setTimeout(() => {
-                          const element = document.getElementById("terms"); // Make sure the ID matches
-                          if (element) {
-                            element.scrollIntoView({ behavior: "smooth" });
-                          }
-                        }, 0);
-                      }} >
+                    <Link to="/TermnsandConditions" onClick={(e) => {
+                      setTimeout(() => {
+                        const element = document.getElementById("terms"); // Make sure the ID matches
+                        if (element) {
+                          element.scrollIntoView({ behavior: "smooth" });
+                        }
+                      }, 0);
+                    }} >
                       <span className="Terms">Terms & Conditions</span>
                     </Link>
                   </div>
@@ -262,8 +265,8 @@ Chennai, Tamil Nadu - 600093
           </Row>
         </Container>
       </div>
-     
+
     </section>
 
-);
+  );
 }

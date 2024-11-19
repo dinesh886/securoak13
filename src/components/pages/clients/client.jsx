@@ -78,7 +78,7 @@ export default function Review() {
 
 
 
-        <Row>
+        {/* <Row>
           <Col md={12}>
             <div
               onMouseEnter={() => swiperRefLocal.current?.swiper?.autoplay?.stop()}
@@ -124,10 +124,10 @@ export default function Review() {
               </Swiper>
             </div>
           </Col>
-        </Row>
+        </Row> */}
       </Container>
 
-      <Modal
+      {/* <Modal
         show={modalShow}
         onHide={handleClose}
         className="custom-modal"
@@ -146,7 +146,7 @@ export default function Review() {
           </ul>
         </Modal.Body>
         <Modal.Footer>
-          {/* Previous and Next buttons */}
+        
           <Button variant="secondary" onClick={handlePrev} disabled={selectedReviewIndex === 0}>
             <FaChevronLeft /> Prev
           </Button>
@@ -154,7 +154,7 @@ export default function Review() {
             Next <FaChevronRight />
           </Button>
         </Modal.Footer>
-      </Modal>
+      </Modal> */}
 
       <div className="summary">
   <p>

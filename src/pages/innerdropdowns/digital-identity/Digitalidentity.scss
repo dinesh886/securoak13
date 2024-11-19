@@ -44,6 +44,7 @@
 .digital-identity-container {
   font-family: Inter, sans-serif;
   margin-top: 47px;
+
   h3 {
     font-family: Inter, sans-serif;
     color: #343a40f8; // Primary color
@@ -64,12 +65,12 @@
   }
 
   p {
-    font-size: 1.1rem; // Slightly larger font for readability
+    font-size: 16px ; // Slightly larger font for readability
     text-align: center; // Center paragraph
     color: #000000e1;
     font-family: Inter, sans-serif;
-      margin-left: 90px;
-      margin-right: 90px;
+    margin-left: 90px;
+    margin-right: 90px;
   }
   
 
@@ -190,9 +191,6 @@
     font-family: Inter, sans-serif;
     transition: background-color 0.3s ease;
 
-    &:hover {
-      background-color: #e9ecef; // Change background color on hover
-    }
   }
 }
 

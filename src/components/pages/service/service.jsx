@@ -1,31 +1,28 @@
 import React from "react";
+import { Link } from "react-router-dom";  
 import "./service.scss";
-
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 
-import { Link } from 'react-router-dom';
-
 import Data from "./data";
-
 import { FaArrowRightLong } from "react-icons/fa6";
 
 export default function Service() {
   return (
     <section className="sec_pad" aria-labelledby="service-heading">
       <Container>
-        <Row  className="row-gap-small">
+        <Row className="row-gap-small">
           <Col md={12}>
             <div className="service_full">
               <div className="title" id="service-heading">
                 {/* Integrated Technology Services */}
               </div>
-              <div className="sub_title">
-               What we Offer  
-              </div>
+              <div className="sub_title">What we Offer</div>
               <div className="cnt">
-             <p> Securoak leads the way in digital security and IT innovation, offering tailored solutions that enhance performance, fortify resilience, and drive measurable outcomes. We empower businesses to thrive in an ever-evolving digital landscape with a strong emphasis on cybersecurity and AI.</p>
+                <p>
+                  Securoak leads the way in digital security and IT innovation, offering tailored solutions that enhance performance, fortify resilience, and drive measurable outcomes. We empower businesses to thrive in an ever-evolving digital landscape with a strong emphasis on cybersecurity and AI.
+                </p>
               </div>
             </div>
           </Col>
@@ -51,12 +48,14 @@ export default function Service() {
                     <div className="text_color_white">
                       <div className="cnt">{value.Desc}</div>
                       <button className="know_more">
+
                       <Link to={value.Link} className="">
             Know More
             <span className="arrow_right">
               <FaArrowRightLong aria-hidden="true" />
             </span>
           </Link>
+
                       </button>
                     </div>
                   </div>

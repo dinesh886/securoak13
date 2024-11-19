@@ -71,7 +71,7 @@ const UpcomingEvents = () => {
                     Center
                   </p>
                   <h6>Meet us at :</h6>
-                  <p> Upcomimg</p>
+                  <p> Upcoming</p>
                </p>
               </Col>
               <Col md={6} className="event-img-col">

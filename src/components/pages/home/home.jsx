@@ -49,7 +49,7 @@ export default function Home() {
 
                 <div className="two_buttons" data-aos="fade-up" data-aos-delay="450">
                   <Link
-                    to="/UpcommingEvents" 
+                    to="/upcoming-events" 
                     aria-label="Learn more about our services"
                   >
                     <div className="service">Upcoming Events</div>

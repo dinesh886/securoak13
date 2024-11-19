@@ -1,24 +1,6 @@
-/* General Reset */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  body {
-    font-family: 'Inter', sans-serif;
-    background-color: #fff;
-    color: #333;
-  }
-  /* .journey-with-securoak{
-    margin: 30px 50px 0px 50px;
-    margin-bottom: 40px;
-  } */
-  
-  /* Title Style */
-  .journey-with-securoak{
+.journey-with-securoak{
     /* margin: 30px 50px 0px 50px; */
-    margin-bottom: 40px ;
+    margin-bottom: 40px;
     background: #ddf2ff7d;
   }
   

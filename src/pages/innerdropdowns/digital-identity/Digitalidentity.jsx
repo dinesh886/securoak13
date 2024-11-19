@@ -9,6 +9,11 @@ import journey from '../../innerdropdowns/journey.jpg';
 import digital from '../../innerdropdowns/gigital-identity.jpg'; // Corrected the image path
 import banner from '../../../components/assests/identitybanner.jpg';
 import Footer from "../../../components/footer/footer";
+import img1 from './img1.jpg'
+import img2 from './img2.jpg'
+import img3 from './img3.jpg'
+import './Digitalidentity.css'
+import banner1 from './service1.png'
 const Digitalidentity = () => {
   useEffect(() => {
     const script = document.createElement('script');
@@ -75,19 +80,19 @@ const Digitalidentity = () => {
     { icon: <FaLock />, title: "Long-Term Partnership", description: "Our commitment to your success extends beyond implementation." },
   ];
   const potentialItems = [
-    { icon: <FaUsers />, text: "Personalized Solutions: Tailored identity management strategies that align with your organization’s unique objectives." },
-    { icon: <FaLock />, text: "Robust Authentication: Advanced authentication methods enhance security and protect sensitive information." },
-    { icon: <FaCogs />, text: "Seamless Integration: Effortless integration with existing systems streamlines processes." },
-    { icon: <FaChartLine />, text: "User-Friendly Design: Intuitive interfaces and self-service options simplify identity management." },
-    { icon: <FaHandshake />, text: "Compliance Support: Guidance in navigating regulatory requirements and adhering to industry standards." },
-    { icon: <FaLock />, text: "Ongoing Support and Monitoring: Continuous support and proactive monitoring address emerging security challenges." },
+    { icon: <FaUsers />, image: img1,title: "Personalized Solutions",text: "Tailored identity management strategies that align with your organization’s unique objectives." },
+    { icon: <FaLock />, image: img2,title: "Robust Authentication", text: " Advanced authentication methods enhance security and protect sensitive information." },
+    { icon: <FaCogs />,image: img3, title: "Seamless Integration", text: " Effortless integration with existing systems streamlines processes." },
+    { icon: <FaChartLine />,image: img1 ,title: "User-Friendly Design", text: " Intuitive interfaces and self-service options simplify identity management." },
+    { icon: <FaHandshake />, image: img2, title: "Compliance Support", text: " Guidance in navigating regulatory requirements and adhering to industry standards." },
+    { icon: <FaLock />,image: img3 ,title: "Ongoing Support and Monitoring", text: " Continuous support and proactive monitoring address emerging security challenges." },
   ];
   return (
     <>
       <Header identityPage={true} />
       <div className="identity-image-container">
         <img
-          src={banner}
+          src={banner1}
           alt="A depiction of the company's philosophy"
           className="identity-page-image"
         />
@@ -148,7 +153,7 @@ const Digitalidentity = () => {
       </ListGroup>
     </div>
     <div className="image-column">
-    <img src={journey } alt="" srcset="" className="big-image"/>
+    <img src={journey} alt="" srcset="" className="big-image"/>
     </div>
   </Card.Body>
 </Card>
@@ -183,7 +188,42 @@ const Digitalidentity = () => {
 
     {/* Unlocking Business Potential Section */}
 {/* Unlocking Business Potential Section */}
-<h2 className="text-center mb-4 potential-title">Unlocking Business Potential</h2>
+
+<section className=" journey-with-securoak">
+      <h2 className="text-center journey-title">Unlocking Business Potential</h2>
+       <div className="container">
+      <Card className="mb-4 governence-card">
+      <Card.Body>
+     <ListGroup variant="flush">
+      {potentialItems.map((item, index) => (
+        <div
+          key={index}
+          className={`card-main d-flex mb-1
+             ${index % 2 === 0 ? 'flex-row-reverse' : 'flex-row'}`}
+        >
+          {/* Text Column */}
+          <div className="content flex-grow-1 d-flex flex-column align-items-center justify-content-start">
+           <h4>{item.title}</h4>
+            <ListGroup.Item className="list-content">
+              {/* <div className="list-icon">{item.icon}</div> */}
+              <span>{item.text}</span>
+            </ListGroup.Item>
+          </div>
+
+          {/* Image Column */}
+          <div className="card-image d-flex flex-column align-items-center justify-content-start">
+            <img src={item.image}  className="unlock-img" alt="" />
+             
+          </div>
+        </div>
+      ))}
+    </ListGroup>
+  </Card.Body>
+</Card>
+</div>
+</section>
+
+{/* <h2 className="text-center mb-4 potential-title">Unlocking Business Potential</h2>
 
 <Card className="mb-4 potential-card">
   <Card.Body className="d-flex flex-row">
@@ -209,10 +249,10 @@ const Digitalidentity = () => {
     </div>
   </Card.Body>
 </Card>
+ */}
 
 
-
-      </Container>
+</Container>
       <Footer />
     </>
   );

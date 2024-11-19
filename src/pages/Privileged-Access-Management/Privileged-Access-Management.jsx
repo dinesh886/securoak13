@@ -11,6 +11,10 @@ import Implementation from "../../components/assests/priviledge/implimentation.p
 import Training from "../../components/assests/priviledge/training.png";
 import why from "../../components/assests/priviledge/security2.jpg";
 import why2 from "../../components/assests/priviledge/security3.jpg";
+import img1 from './img1.jpg'
+import img2 from './img2.jpg'
+import img3 from './img3.jpg'
+import banner1 from './privilage.jpeg'
 
 import Support from "../../components/assests/priviledge/customer-service.png";
 import { Card, ListGroup } from 'react-bootstrap'; // Assuming you're using Bootstrap for card and list styling
@@ -18,25 +22,31 @@ const PrivilegedAccessManagement = () => {
 
     const potentialItems = [
         {
-          text: "Customized Access Control: Utilizing AI-driven insights, we design access control measures tailored to your organization’s specific needs. This ensures that only authorized personnel can access critical systems, significantly reducing the risk of both internal and external threats."
+          image:img1, title:"Customized Access Control", text: " Utilizing AI-driven insights, we design access control measures tailored to your organization’s specific needs. This ensures that only authorized personnel can access critical systems, significantly reducing the risk of both internal and external threats."
         },
         {
-          text: "Efficient Credential Management: Our AI-enhanced solutions streamline the management of privileged credentials, reducing administrative overhead while bolstering security. By automating key processes such as password rotation and access provisioning, we free your IT teams to concentrate on strategic initiatives rather than routine tasks."
+          image:img2, title:"Efficient Credential Management",text: " Our AI-enhanced solutions streamline the management of privileged credentials, reducing administrative overhead while bolstering security. By automating key processes such as password rotation and access provisioning, we free your IT teams to concentrate on strategic initiatives rather than routine tasks."
         },
         {
-          text: "Proactive Threat Detection: Continuous monitoring of privileged accounts through AI algorithms enables us to identify suspicious activities in real-time. This proactive approach allows for swift responses to potential security threats, enhancing your organization’s ability to mitigate risks before they escalate."
+          image:img3, title:"Proactive Threat Detection", text: " Continuous monitoring of privileged accounts through AI algorithms enables us to identify suspicious activities in real-time. This proactive approach allows for swift responses to potential security threats, enhancing your organization’s ability to mitigate risks before they escalate."
+        },
+        {
+          image:img1, title:"Enhanced Compliance Support",text: " Our PAM solutions simplify compliance with regulatory requirements by implementing robust controls and providing detailed audit trails for privileged access activities. AI analytics facilitate efficient reporting and documentation necessary for meeting industry standards, thereby reducing your compliance burden."
+        },
+        {
+          image:img2, title:"Seamless Integration", text: " Our PAM solutions are designed for effortless integration with your existing systems, providing a cohesive framework for managing privileged access without disruption. This ensures that security enhancements are smoothly implemented, preserving operational efficiency and user experience."
         },
        
        
       ];
-      const potentialItems2 = [
-        {
-            text: "Enhanced Compliance Support: Our PAM solutions simplify compliance with regulatory requirements by implementing robust controls and providing detailed audit trails for privileged access activities. AI analytics facilitate efficient reporting and documentation necessary for meeting industry standards, thereby reducing your compliance burden."
-          },
-          {
-            text: "Seamless Integration: Our PAM solutions are designed for effortless integration with your existing systems, providing a cohesive framework for managing privileged access without disruption. This ensures that security enhancements are smoothly implemented, preserving operational efficiency and user experience."
-          },
-      ];
+      // const potentialItems2 = [
+      //   {
+      //       text: "Enhanced Compliance Support: Our PAM solutions simplify compliance with regulatory requirements by implementing robust controls and providing detailed audit trails for privileged access activities. AI analytics facilitate efficient reporting and documentation necessary for meeting industry standards, thereby reducing your compliance burden."
+      //     },
+      //     {
+      //       text: "Seamless Integration: Our PAM solutions are designed for effortless integration with your existing systems, providing a cohesive framework for managing privileged access without disruption. This ensures that security enhancements are smoothly implemented, preserving operational efficiency and user experience."
+      //     },
+      // ];
       
       useEffect(() => {
         const script = document.createElement('script');
@@ -57,7 +67,7 @@ const PrivilegedAccessManagement = () => {
        {/* Image and Overlay Section */}
        <div className="identity-image-container">
         <img
-          src={banner}
+          src={banner1}
           alt="A depiction of the company's philosophy"
           className="identity-page-image"
         />
@@ -89,6 +99,41 @@ const PrivilegedAccessManagement = () => {
 
 
 <section className="journey-with-securoak">
+      <h2 className="text-center journey-title">Journey With Securoak</h2>
+      <p className='title-below-para'>Partnering with Securoak for your WIAM journey means embracing a structured approach to identity management that unlocks your organization’s full potential.</p>
+       <div className="container">
+      <Card className="mb-4 governence-card">
+      <Card.Body>
+     <ListGroup variant="flush">
+      {potentialItems.map((item, index) => (
+        <div
+          key={index}
+          className={`card-main d-flex mb-1
+             ${index % 2 === 0 ? 'flex-row-reverse' : 'flex-row'}`}
+        >
+          {/* Text Column */}
+          <div className="content flex-grow-1 d-flex flex-column align-items-center justify-content-start">
+           <h4>{item.title}</h4>
+            <ListGroup.Item className="list-content">
+              {/* <div className="list-icon">{item.icon}</div> */}
+              <span>{item.text}</span>
+            </ListGroup.Item>
+          </div>
+
+          {/* Image Column */}
+          <div className="card-image d-flex flex-column align-items-center justify-content-start">
+            <img src={item.image}  className="unlock-img" alt="" />
+             
+          </div>
+        </div>
+      ))}
+    </ListGroup>
+  </Card.Body>
+</Card>
+</div>
+</section>
+
+{/* <section className="journey-with-securoak">
     <div className='text-center'>
   <h2 className="c journey-title">Unlocking Your Potential</h2>
   <p className='title-below-para'>Partnering with Securoak for your WIAM journey means embracing a structured approach to identity management that unlocks your organization’s full potential.</p>
@@ -120,20 +165,7 @@ const PrivilegedAccessManagement = () => {
           </div>
         </Card.Body>
       </Card>
-
-      <Card className="mb-4 journey-card">
-      <ListGroup variant="flush">
-              {potentialItems2.map((item, index) => (
-                <ListGroup.Item key={index} className="list-item">
-                  <div className="list-icon">{item.icon}</div>
-                  <span>{item.text}</span>
-                </ListGroup.Item>
-              ))}
-            </ListGroup>
-            </Card>
-
-      
-    </section>
+    </section> */}
 
 
 

@@ -10,6 +10,10 @@ import Implementation from "./implimentation.png";
 import Training from "./training.png";
 import partner from "./partner.jpg";
 import Support from "./customer-service.png";
+import img1 from './img1.jpg'
+import img2 from './img2.jpg'
+import img3 from './img3.jpg'
+import banner1 from './934721.jpg'
 import { Card, ListGroup } from 'react-bootstrap'; // Assuming you're using Bootstrap for card and list styling
 
 
@@ -20,28 +24,38 @@ const IdentityGovernance = () => {
 
     const potentialItems = [
         {
-          text: "Streamlined Risk Management: Our advanced AI-driven tools allow you to understand and manage access risks effortlessly. By leveraging sophisticated algorithms, we continuously analyze user behavior patterns and access requests, enabling you to control permissions for sensitive data and protect your organization’s most valuable resources. This proactive approach not only safeguards your data but also ensures compliance with ever-evolving regulatory requirements."
+          image:img1, title:"Streamlined Risk Management",text: " Our advanced AI-driven tools allow you to understand and manage access risks effortlessly. By leveraging sophisticated algorithms, we continuously analyze user behavior patterns and access requests, enabling you to control permissions for sensitive data and protect your organization’s most valuable resources. This proactive approach not only safeguards your data but also ensures compliance with ever-evolving regulatory requirements."
         },
         {
-          text: "Proactive Policy Enforcement: With automated identification of policy violations, our IG solutions enable you to address risks before they escalate. Our real-time detection capabilities, powered by machine learning, monitor access patterns and user activities around the clock. This allows you to prevent unauthorized access and compliance issues, fortifying your systems and safeguarding sensitive information from potential breaches."
+          image:img2, title:"Proactive Policy Enforcement",text: " With automated identification of policy violations, our IG solutions enable you to address risks before they escalate. Our real-time detection capabilities, powered by machine learning, monitor access patterns and user activities around the clock. This allows you to prevent unauthorized access and compliance issues, fortifying your systems and safeguarding sensitive information from potential breaches."
         },
         {
-          text: "Expert Implementation with Trusted Partners: We collaborate with leading providers such as SailPoint and RSA, combining their industry-leading technology with our deep technical expertise tailored to your identity governance needs. By integrating advanced cybersecurity measures, we enhance security while minimizing operational risks, ensuring that your identity management framework is resilient against modern threats."
+          image:img3, title:"Expert Implementation with Trusted Partners",text: " We collaborate with leading providers such as SailPoint and RSA, combining their industry-leading technology with our deep technical expertise tailored to your identity governance needs. By integrating advanced cybersecurity measures, we enhance security while minimizing operational risks, ensuring that your identity management framework is resilient against modern threats."
+        },
+        {
+          image:img1, title:"Streamlined Risk Management",text: " Our advanced AI-driven tools allow you to understand and manage access risks effortlessly. By leveraging sophisticated algorithms, we continuously analyze user behavior patterns and access requests, enabling you to control permissions for sensitive data and protect your organization’s most valuable resources. This proactive approach not only safeguards your data but also ensures compliance with ever-evolving regulatory requirements."
+        },
+        {
+          image:img2, title:"Proactive Policy Enforcement", text: " With automated identification of policy violations, our IG solutions enable you to address risks before they escalate. Our real-time detection capabilities, powered by machine learning, monitor access patterns and user activities around the clock. This allows you to prevent unauthorized access and compliance issues, fortifying your systems and safeguarding sensitive information from potential breaches."
+        },
+        {
+          image:img3, title:"Expert Implementation with Trusted Partners",text: " We collaborate with leading providers such as SailPoint and RSA, combining their industry-leading technology with our deep technical expertise tailored to your identity governance needs. By integrating advanced cybersecurity measures, we enhance security while minimizing operational risks, ensuring that your identity management framework is resilient against modern threats."
         },
        
-      ];
-      const potentialItems2 = [
-        {
-          text: "Streamlined Risk Management: Our advanced AI-driven tools allow you to understand and manage access risks effortlessly. By leveraging sophisticated algorithms, we continuously analyze user behavior patterns and access requests, enabling you to control permissions for sensitive data and protect your organization’s most valuable resources. This proactive approach not only safeguards your data but also ensures compliance with ever-evolving regulatory requirements."
-        },
-        {
-          text: "Proactive Policy Enforcement: With automated identification of policy violations, our IG solutions enable you to address risks before they escalate. Our real-time detection capabilities, powered by machine learning, monitor access patterns and user activities around the clock. This allows you to prevent unauthorized access and compliance issues, fortifying your systems and safeguarding sensitive information from potential breaches."
-        },
-        {
-          text: "Expert Implementation with Trusted Partners: We collaborate with leading providers such as SailPoint and RSA, combining their industry-leading technology with our deep technical expertise tailored to your identity governance needs. By integrating advanced cybersecurity measures, we enhance security while minimizing operational risks, ensuring that your identity management framework is resilient against modern threats."
-        },
        
       ];
+      // const potentialItems2 = [
+      //   {
+      //     text: "Streamlined Risk Management: Our advanced AI-driven tools allow you to understand and manage access risks effortlessly. By leveraging sophisticated algorithms, we continuously analyze user behavior patterns and access requests, enabling you to control permissions for sensitive data and protect your organization’s most valuable resources. This proactive approach not only safeguards your data but also ensures compliance with ever-evolving regulatory requirements."
+      //   },
+      //   {
+      //     text: "Proactive Policy Enforcement: With automated identification of policy violations, our IG solutions enable you to address risks before they escalate. Our real-time detection capabilities, powered by machine learning, monitor access patterns and user activities around the clock. This allows you to prevent unauthorized access and compliance issues, fortifying your systems and safeguarding sensitive information from potential breaches."
+      //   },
+      //   {
+      //     text: "Expert Implementation with Trusted Partners: We collaborate with leading providers such as SailPoint and RSA, combining their industry-leading technology with our deep technical expertise tailored to your identity governance needs. By integrating advanced cybersecurity measures, we enhance security while minimizing operational risks, ensuring that your identity management framework is resilient against modern threats."
+      //   },
+       
+      // ];
 
       useEffect(() => {
         const script = document.createElement('script');
@@ -62,13 +76,13 @@ const IdentityGovernance = () => {
         {/* Image and Overlay Section */}
         <div className="identity-image-container">
         <img
-          src={banner}
+          src={banner1}
           alt="A depiction of the company's philosophy"
           className="identity-page-image"
         />
         <div className="overlay-text">
           <h1>Identity Governance with Securoak </h1>
-          <p>Home <i className="fa-solid fa-greater-than benner-icon"></i>ser(WIAM)</p>
+          <p>Home <i className="fa-solid fa-greater-than benner-icon"></i>services<i className="fa-solid fa-greater-than benner-icon"></i> idendity goverence <i className="fa-solid fa-greater-than benner-icon"></i> (WIAM)</p>
         </div>
       </div>
 
@@ -84,6 +98,42 @@ const IdentityGovernance = () => {
 
       
     <section className="journey-with-securoak">
+      <h2 className="text-center journey-title">Journey With Securoak</h2>
+      <p className='title-below-para'>Partnering with Securoak for your WIAM journey means embracing a structured approach to identity management that unlocks your organization’s full potential.</p>
+       <div className="container">
+      <Card className="mb-4 governence-card">
+      <Card.Body>
+     <ListGroup variant="flush">
+      {potentialItems.map((item, index) => (
+        <div
+          key={index}
+          className={`card-main d-flex mb-1
+             ${index % 2 === 0 ? 'flex-row-reverse' : 'flex-row'}`}
+        >
+          {/* Text Column */}
+          <div className="content flex-grow-1 d-flex flex-column align-items-center justify-content-start">
+           <h4>{item.title}</h4>
+            <ListGroup.Item className="list-content">
+              {/* <div className="list-icon">{item.icon}</div> */}
+              <span>{item.text}</span>
+            </ListGroup.Item>
+          </div>
+
+          {/* Image Column */}
+          <div className="card-image d-flex flex-column align-items-center justify-content-start">
+            <img src={item.image}  className="unlock-img" alt="" />
+             
+          </div>
+        </div>
+      ))}
+    </ListGroup>
+  </Card.Body>
+</Card>
+</div>
+</section>
+
+
+    {/* <section className="journey-with-securoak">
     <div className='text-center'>
   <h2 className="c journey-title">Unlocking Your Potential</h2>
   <p className='title-below-para'>Partnering with Securoak for your WIAM journey means embracing a structured approach to identity management that unlocks your organization’s full potential.</p>
@@ -115,18 +165,7 @@ const IdentityGovernance = () => {
           </div>
         </Card.Body>
       </Card>
-
-      <Card className="mb-4 journey-card">
-      <ListGroup variant="flush">
-              {potentialItems2.map((item, index) => (
-                <ListGroup.Item key={index} className="list-item">
-                  <div className="list-icon">{item.icon}</div>
-                  <span>{item.text}</span>
-                </ListGroup.Item>
-              ))}
-            </ListGroup>
-            </Card>
-    </section>
+    </section> */}
 
 
 

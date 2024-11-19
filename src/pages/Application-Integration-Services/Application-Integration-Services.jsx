@@ -11,16 +11,19 @@ import ux from "../../components/assests/api/uxdeasign.png";
 import product from "../../components/assests/api/product4.png";
 import { Card, ListGroup } from 'react-bootstrap'; // Assuming you're using Bootstrap for card and list styling
 import { useEffect } from 'react';
+import img1 from './img1.jpg'
+import img2 from './img2.jpg'
+import img3 from './img3.jpg'
 
 
 const ApplicationIntegrationServices = () => {
 
 
     const potentialItems = [
-        {  text: "Consultation and Analysis: We begin with a thorough assessment of your current systems and integration needs, identifying opportunities for improvement while addressing existing vulnerabilities and compliance requirements." },
-        { text: "Custom Solution Design: Our team collaborates closely with you to develop tailored integration strategies that align with your business objectives and security requirements, leveraging AI insights to inform decision-making." },
-        {  text: "Implementation: We execute the integration plan, developing intuitive UI/UX solutions and secure APIs that enhance your applications' capabilities, while ensuring compliance with stringent cybersecurity standards." },
-        {  text: "Ongoing Support: Following deployment, we offer continuous support and service management to ensure optimal performance and user satisfaction. Our AI-enhanced monitoring solutions continuously adapt to evolving threats, quickly addressing any challenges that arise." },
+        {  image:img1, title:"Consultation and Analysis",text: " We begin with a thorough assessment of your current systems and integration needs, identifying opportunities for improvement while addressing existing vulnerabilities and compliance requirements." },
+        { image:img2, title:"Custom Solution Design", text: " Our team collaborates closely with you to develop tailored integration strategies that align with your business objectives and security requirements, leveraging AI insights to inform decision-making." },
+        { image:img3, title:"Implementation", text: " We execute the integration plan, developing intuitive UI/UX solutions and secure APIs that enhance your applications' capabilities, while ensuring compliance with stringent cybersecurity standards." },
+        { image:img1, title:"Ongoing Support", text: " Following deployment, we offer continuous support and service management to ensure optimal performance and user satisfaction. Our AI-enhanced monitoring solutions continuously adapt to evolving threats, quickly addressing any challenges that arise." },
       
       ];
 
@@ -132,6 +135,41 @@ const ApplicationIntegrationServices = () => {
 
 
 <section className="journey-with-securoak">
+      <h2 className="text-center journey-title">Journey With Securoak</h2>
+      <p className='title-below-para'>Partnering with Securoak for your WIAM journey means embracing a structured approach to identity management that unlocks your organization’s full potential.</p>
+       <div className="container">
+      <Card className="mb-4 governence-card">
+      <Card.Body>
+     <ListGroup variant="flush">
+      {potentialItems.map((item, index) => (
+        <div
+          key={index}
+          className={`card-main d-flex mb-1
+             ${index % 2 === 0 ? 'flex-row-reverse' : 'flex-row'}`}
+        >
+          {/* Text Column */}
+          <div className="content flex-grow-1 d-flex flex-column align-items-center justify-content-start">
+           <h4>{item.title}</h4>
+            <ListGroup.Item className="list-content">
+              {/* <div className="list-icon">{item.icon}</div> */}
+              <span>{item.text}</span>
+            </ListGroup.Item>
+          </div>
+
+          {/* Image Column */}
+          <div className="card-image d-flex flex-column align-items-center justify-content-start">
+            <img src={item.image}  className="unlock-img" alt="" />
+             
+          </div>
+        </div>
+      ))}
+    </ListGroup>
+  </Card.Body>
+</Card>
+</div>
+</section>
+
+{/* <section className="journey-with-securoak">
     <div className='text-center'>
   <h2 className="c journey-title">Journey With Securoak</h2>
   <p className='title-below-para'>Partnering with Securoak for your WIAM journey means embracing a structured approach to identity management that unlocks your organization’s full potential.</p>
@@ -162,7 +200,7 @@ const ApplicationIntegrationServices = () => {
           </div>
         </Card.Body>
       </Card>
-    </section>
+    </section> */}
 
     <section className="why-securoak-section " >
       <div className="why-securoak-top">

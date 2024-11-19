@@ -16,6 +16,7 @@ import partner2 from '../../assests/Partnership/octa.jpg'
 import partner3 from '../../assests/Partnership/xm-cyber.jpg'
 import partner4 from '../../assests/Partnership/drata.jpg'
 import partners from '../../assests/Partnership/partnership2.jpg'
+import partner5 from '../../assests/Partnership/oktalogo.jpg'
 
 const Partner = () => {
   return (
@@ -26,11 +27,12 @@ const Partner = () => {
             <div className="cloud_cnt">
               {/* <h2 className="title">Cloud Solutions</h2> */}
               <p className="desc">Partnerships</p>
-
+              <p className='partner-title'><b>Industry Leading IDAM Solutions: </b></p>
               <p className="sub_desc">
-             <b> Industry Leading IDAM Solutions: </b>
-               Establishing a Comprehensive Defense Strategy : Empowering and protecting premier organizations with an integrated platform.
+            
+              Establishing a Comprehensive Defense Strategy: Empowering and protecting premier organizations with an integrated platform.
               Simplify access policy management, clearly define group memberships, and seamlessly enforce security protocols.
+
               </p>
 
               <div className="total_list">
@@ -51,13 +53,14 @@ const Partner = () => {
                     {/* <span className="titles">
                       Scalable infrastructure for future growth
                     </span> */}
-                      <img src={partner2} alt="" srcset="" />
+                      <img src={partner5} alt="" srcset="" />
                   </div>
                 </div>
+                <p className='partner-title'><b>Industry Leading IDAM Solutions: </b></p>
                 <p className="sub_desc">
-              <b>Industry Leading IDAM Solutions: </b>
-               Establishing a Comprehensive Defense Strategy : Empowering and protecting premier organizations with an integrated platform.
-              Simplify access policy management, clearly define group memberships, and seamlessly enforce security protocols.
+                 Fortify Your Digital Perimeter: Streamline and expedite your compliance efforts with industry-leading solutions.
+                 Reduce costs and time with rapid remediation and automated attack path management, ensuring your organization remains secure and compliant.
+
               </p>
                 <div className="list">
                   <div className="para partner-three">
