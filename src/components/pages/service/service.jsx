@@ -4,6 +4,7 @@ import "./service.scss";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
+
 import Data from "./data";
 import { FaArrowRightLong } from "react-icons/fa6";
 
@@ -47,8 +48,14 @@ export default function Service() {
                     <div className="text_color_white">
                       <div className="cnt">{value.Desc}</div>
                       <button className="know_more">
-                        {/* Use React Router's Link component for internal navigation */}
-                     
+
+                      <Link to={value.Link} className="">
+            Know More
+            <span className="arrow_right">
+              <FaArrowRightLong aria-hidden="true" />
+            </span>
+          </Link>
+
                       </button>
                     </div>
                   </div>

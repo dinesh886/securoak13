@@ -1,4 +1,4 @@
-/* Overall Section */
+ /* Overall Section */
 .staffing-outsourcing {
     background-color: #f1f3f5;
     padding: 50px 0;
@@ -35,7 +35,7 @@
 }
 
 .offering h3,p{
-    
+    text-align: center;
     max-width: 800px;
     margin: 0 auto;
     color: #333;

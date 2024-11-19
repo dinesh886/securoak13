@@ -94,8 +94,10 @@ function Header({ aboutPage, identityPage }) {
           // Link: "/securoak13/",
           
           Submenu: [
-            { Title: "Digital Identity Transformation", Link: "/securoak13/Digital-Identity-Transformation" },
-            { Title: "Customer Identity and Access Management", Link: "/securoak13/identity-access-management/access-governance" },
+
+            { Title: "Staffing Services ", Link: "/securoak12/staffing-services " },
+            { Title: "Outsourcing Services", Link: "/securoak12/outsourcing-services" },
+
           ],
         },
       ],
