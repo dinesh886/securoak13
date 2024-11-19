@@ -159,7 +159,7 @@ const ApiDevelopment = () => {
 
                   </div>
                 </div> */}
-                <a href="/securoak12/api-developement" className="ser-learn btn-primary mt-4">
+                <a href="/securoak13/api-developement" className="ser-learn btn-primary mt-4">
                   Know more
                   <span className="arrow_right">
                     <FaArrowRightLong aria-hidden="true" />

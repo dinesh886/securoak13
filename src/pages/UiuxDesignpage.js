@@ -156,7 +156,7 @@ const UiuxDesign = () => {
                   </div>
 
                 </div> */}
-                <a href="/securoak12/ui-ux-design" className="ser-learn btn-primary mt-4">
+                <a href="/securoak13/ui-ux-design" className="ser-learn btn-primary mt-4">
                   Know more
                   <span className="arrow_right">
                     <FaArrowRightLong aria-hidden="true" />

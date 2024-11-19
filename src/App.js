@@ -43,7 +43,7 @@ function App() {
   }, []);
 
   return (
-    <Router exact basename="/securoak12">
+    <Router exact basename="/securoak13">
       <ScrollToTopButton />
       
       {/* Define routes for your different pages */}

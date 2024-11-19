@@ -166,7 +166,7 @@ const ContactUs = () => {
   <div className="contact-right-title">
     <h2>Stay Informed with Securoak</h2>
     <p className="rightpara">
-      Join our newsletter, <strong>The Security Ledger</strong>, to get the latest on cybersecurity trends, practical tips for protecting your data, and expert advice on creating secure digital experiences. Be the first to know about industry insights and strategies to keep your business secure and compliant.
+      Join Us, <strong>The Security Ledger</strong>, to get the latest on cybersecurity trends, practical tips for protecting your data, and expert advice on creating secure digital experiences. Be the first to know about industry insights and strategies to keep your business secure and compliant.
     </p>
   </div>
 </div>

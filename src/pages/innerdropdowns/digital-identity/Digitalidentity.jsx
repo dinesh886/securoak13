@@ -189,7 +189,7 @@ const Digitalidentity = () => {
     {/* Unlocking Business Potential Section */}
 {/* Unlocking Business Potential Section */}
 
-<section className=" journey-with-securoak">
+{/* <section className=" journey-with-securoak">
       <h2 className="text-center journey-title">Unlocking Business Potential</h2>
        <div className="container">
       <Card className="mb-4 governence-card">
@@ -201,16 +201,15 @@ const Digitalidentity = () => {
           className={`card-main d-flex mb-1
              ${index % 2 === 0 ? 'flex-row-reverse' : 'flex-row'}`}
         >
-          {/* Text Column */}
+        
           <div className="content flex-grow-1 d-flex flex-column align-items-center justify-content-start">
            <h4>{item.title}</h4>
             <ListGroup.Item className="list-content">
-              {/* <div className="list-icon">{item.icon}</div> */}
+             
               <span>{item.text}</span>
             </ListGroup.Item>
           </div>
 
-          {/* Image Column */}
           <div className="card-image d-flex flex-column align-items-center justify-content-start">
             <img src={item.image}  className="unlock-img" alt="" />
              
@@ -221,9 +220,9 @@ const Digitalidentity = () => {
   </Card.Body>
 </Card>
 </div>
-</section>
+</section> */}
 
-{/* <h2 className="text-center mb-4 potential-title">Unlocking Business Potential</h2>
+ <h2 className="text-center mb-4 potential-title">Unlocking Business Potential</h2>
 
 <Card className="mb-4 potential-card">
   <Card.Body className="d-flex flex-row">
@@ -249,7 +248,7 @@ const Digitalidentity = () => {
     </div>
   </Card.Body>
 </Card>
- */}
+ 
 
 
 </Container>

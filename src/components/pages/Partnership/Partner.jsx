@@ -17,6 +17,7 @@ import partner3 from '../../assests/Partnership/xm-cyber.jpg'
 import partner4 from '../../assests/Partnership/drata.jpg'
 import partners from '../../assests/Partnership/partnership2.jpg'
 import partner5 from '../../assests/Partnership/oktalogo.jpg'
+import partner6 from '../../assests/Partnership/IBM.png'
 
 const Partner = () => {
   return (
@@ -38,25 +39,19 @@ const Partner = () => {
               <div className="total_list">
                 <div className="list">
                   <div className="para partner-one">
-                    {/* <span className="tick">
-                      <BsCheck aria-hidden="true" />
-                    </span> */}
-                    {/* <span className="titles">
-                     Industry Leading IDAM Solutions:
-                    </span> */}
+                   
                     <img src={partner} alt="" srcset="" />
                   </div>
                   <div className="para partner-two">
-                    {/* <span className="tick">
-                      <BsCheck aria-hidden="true" />
-                    </span> */}
-                    {/* <span className="titles">
-                      Scalable infrastructure for future growth
-                    </span> */}
+                    
                       <img src={partner5} alt="" srcset="" />
                   </div>
+                  <div className="para partner-two">
+                    
+                    <img src={partner6} alt="" srcset="" />
                 </div>
-                <p className='partner-title'><b>Industry Leading IDAM Solutions: </b></p>
+                </div>
+                <p className='partner-title'><b>Security and Compliance Solutions: </b></p>
                 <p className="sub_desc">
                  Fortify Your Digital Perimeter: Streamline and expedite your compliance efforts with industry-leading solutions.
                  Reduce costs and time with rapid remediation and automated attack path management, ensuring your organization remains secure and compliant.
@@ -64,46 +59,17 @@ const Partner = () => {
               </p>
                 <div className="list">
                   <div className="para partner-three">
-                    {/* <span className="tick">
-                      <BsCheck aria-hidden="true" />
-                    </span>
-                    <span className="titles">
-                    
-
-                    </span> */}
+                  
                     <img src={partner4} alt="" srcset="" />
                   </div>
                   <div className="para partner-four">
-                    {/* <span className="tick">
-                      <BsCheck aria-hidden="true" />
-                    </span>
-                    <span className="titles">
-                      Disaster recovery solutions for business continuity
-                    </span> */}
+                   
                       <img src={partner3} alt="" srcset="" />
                   </div>
                 </div>
               </div>
 
-              {/* <button className="learn">
-                <Link
-                  to="/CloudSolutions" 
-                  aria-label="Learn more about our cloud solutions"
-                  onClick={(e) => {
-                    setTimeout(() => {
-                      const element = document.getElementById("cloud"); 
-                      if (element) {
-                        element.scrollIntoView({ behavior: "smooth" });
-                      }
-                    }, 0);
-                  }}
-                >
-                  Know more
-                  <span className="arrow_right">
-                    <FaArrowRightLong aria-hidden="true" />
-                  </span>
-                </Link>
-              </button> */}
+           
             </div>
           </Col>
           <Col md={6}>

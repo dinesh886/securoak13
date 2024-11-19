@@ -26,17 +26,17 @@ function Header({ aboutPage, identityPage }) {
 
   useEffect(() => {
     const setActiveItemBasedOnPath = () => {
-      if (location.pathname === "/securoak12") {
+      if (location.pathname === "/securoak13") {
         setActiveItem("HOME");
-      } else if (location.pathname === "/securoak12/about") {
+      } else if (location.pathname === "/securoak13/about") {
         setActiveItem("ABOUT US");
       } else {
         const servicePaths = [
-          "/securoak12/identity-access-management",
-          "/securoak12/CloudSolutions",
-          "/securoak12/ui-ux-design",
-          "/securoak12/devop-secops",
-          "/securoak12/api-developement",
+          "/securoak13/identity-access-management",
+          "/securoak13/CloudSolutions",
+          "/securoak13/ui-ux-design",
+          "/securoak13/devop-secops",
+          "/securoak13/api-developement",
         ];
         const foundService = servicePaths.find((path) =>
           location.pathname.startsWith(path)
@@ -51,8 +51,8 @@ function Header({ aboutPage, identityPage }) {
   }, [location.pathname]);
 
   const Data = [
-    { Title: "Home", Link: "/securoak12" },
-    // { Title: "About Us", Link: "/securoak12/about" },
+    { Title: "Home", Link: "/securoak13" },
+    // { Title: "About Us", Link: "/securoak13/about" },
     {
       Title: "Our Services",
       Link: "#",
@@ -66,48 +66,50 @@ function Header({ aboutPage, identityPage }) {
           Link: "",
           Submenu: [
             
-            { Title: "Digital Identity Transformation", Link: "/securoak12/Digital-Identity-Transformation" },
-            { Title: "Customer Identity and Access Management", Link: "/securoak12/identity-access-management" },
-            { Title: "Workforce Identity and Access Management", Link: "/securoak12/Workforce-Identity" },
-            { Title: "Identity Governance", Link: "/securoak12/Identitygovernance" },
-            { Title: "Privilege Access Management", Link: "/securoak12/Privilegedaccessmanagement" },
-            // { Title: "Managed Support Services", Link: "/securoak12/Managedsupportservices" }
+            { Title: "Digital Identity Transformation", Link: "/securoak13/Digital-Identity-Transformation" },
+            { Title: "Customer Identity and Access Management", Link: "/securoak13/identity-access-management" },
+            { Title: "Workforce Identity and Access Management", Link: "/securoak13/Workforce-Identity" },
+            { Title: "Identity Governance", Link: "/securoak13/Identitygovernance" },
+            { Title: "Privilege Access Management", Link: "/securoak13/Privilegedaccessmanagement" },
+            // { Title: "Managed Support Services", Link: "/securoak13/Managedsupportservices" }
           ],
         },
         { Title: "Application Integration Services",
-           Link: "/securoak12/Applicationintegrationservices" 
+           Link: "/securoak13/Applicationintegrationservices" 
           
           },
         { 
           Title: "Infrastructure & Managed Services",
-          // Link: "/securoak12/", 
+          // Link: "/securoak13/", 
           Submenu: [
-            { Title: "IT Consulting", Link: "/securoak12/it-consulting" },
-            { Title: "NOC & SOC ", Link: "/securoak12/Noc-soc" },
-            { Title: "Network and Telephony Solutions", Link: "/securoak12/Network-Telephony-Solutions"  },
-            { Title: "Managed IT Services", Link: "/securoak12/Managed-It-Services" },
-            { Title: "IT Procurement", Link: "/securoak12/It-procurement" },
+            { Title: "IT Consulting", Link: "/securoak13/it-consulting" },
+            { Title: "NOC & SOC ", Link: "/securoak13/Noc-soc" },
+            { Title: "Network and Telephony Solutions", Link: "/securoak13/Network-Telephony-Solutions"  },
+            { Title: "Managed IT Services", Link: "/securoak13/Managed-It-Services" },
+            { Title: "IT Procurement", Link: "/securoak13/It-procurement" },
           ],
         },
         { 
           Title: "Staffing and Outsourcing Services", 
-          // Link: "/securoak12/",
+          // Link: "/securoak13/",
           
           Submenu: [
+
             { Title: "Staffing Services ", Link: "/securoak12/staffing-services " },
             { Title: "Outsourcing Services", Link: "/securoak12/outsourcing-services" },
+
           ],
         },
       ],
     },
-    { Title: "Events", Link: "/securoak12/upcoming-events" },
-    { Title: "Contact Us", Link: "/securoak12/ContactUs" },
+    { Title: "Events", Link: "/securoak13/upcoming-events" },
+    { Title: "Contact Us", Link: "/securoak13/ContactUs" },
   ];
 
   return (
     <Navbar collapseOnSelect expand="lg" className={`header_navebar ${scrolled ? "scrolled" : ""} ${aboutPage ? "header-about" : ""} ${identityPage ? "header-identity" : ""}`}>
       <Container>
-        <Navbar.Brand href="/securoak12" className="icon-logo">
+        <Navbar.Brand href="/securoak13" className="icon-logo">
           <div className="main_logo">
             <img src={logo} alt="Company Logo" title="Company Logo" loading="lazy" />
           </div>
@@ -124,7 +126,7 @@ function Header({ aboutPage, identityPage }) {
               >
                 <a
                   href={value.Link}
-                  className={`nav-link ${"/securoak12" + location.pathname === value.Link || "/securoak12" + location.pathname === value.Link + "/" ? "active" : ""}`}
+                  className={`nav-link ${"/securoak13" + location.pathname === value.Link || "/securoak13" + location.pathname === value.Link + "/" ? "active" : ""}`}
                   onClick={() => setActiveItem(value.Title)}
                 >
                   {value.Title}
