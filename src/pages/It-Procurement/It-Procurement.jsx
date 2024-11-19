@@ -1,7 +1,7 @@
 import React from 'react'
 import Header from "../../components/header/header";
 import Footer from "../../components/footer/footer";
-import banner from '../WorkforceIdentity/workforce2.jpg';
+import banner from './procure.jpg';
 import "./It-Procurement.css"
 import security from "../WorkforceIdentity/productivity.png";
 import productivity from "../WorkforceIdentity/productivity2.png";
@@ -9,6 +9,7 @@ import verified from "../WorkforceIdentity/security2.png";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
+import partner from "../../pages/IdentityGovernance/partner.jpg";
 import { Card, ListGroup } from 'react-bootstrap'; // Assuming you're using Bootstrap for card and list styling
 import { FaShieldAlt, FaRegLightbulb,FaClipboardCheck,FaRocket,FaLock, FaCloudUploadAlt,FaTachometerAlt, FaLayerGroup, FaPlug, FaChartLine } from 'react-icons/fa';
 const ItProcurement = () => {
@@ -237,33 +238,33 @@ Embarking on your procurement journey with Securoak is both straightforward and 
 <section className="cybersecurity-integration">
   <div className="cybersecurity-container">
     <h2 className="section-title">Cybersecurity Integration</h2>
-    
-    <div className="cybersecurity-cards">
-      <div className="cybersecurity-card">
-        <div className="card-icon">
+
+    <div className="cybersecurity-features">
+      <div className="cybersecurity-feature">
+        <div className="feature-icon">
           <i className="fas fa-shield-virus"></i>
         </div>
-        <h4>Proactive Threat Management</h4>
+        <h4 className='cyber-head'>Proactive Threat Management</h4>
         <p>
           Our procurement services include robust cybersecurity solutions that protect your IT assets from potential threats, ensuring your hardware and software are secured from the outset.
         </p>
       </div>
-      
-      <div className="cybersecurity-card">
-        <div className="card-icon">
+
+      <div className="cybersecurity-feature">
+        <div className="feature-icon">
           <i className="fas fa-robot"></i>
         </div>
-        <h4>AI-Powered Security Solutions</h4>
+        <h4  className='cyber-head'>AI-Powered Security Solutions</h4>
         <p>
-          We offer advanced cybersecurity solutions powered by artificial intelligence, which provide real-time threat detection and response capabilities to safeguard your organization against evolving risks.
+          We offer advanced cybersecurity solutions powered by artificial intelligence, providing real-time threat detection and response capabilities to safeguard your organization against evolving risks.
         </p>
       </div>
-      
-      <div className="cybersecurity-card">
-        <div className="card-icon">
+
+      <div className="cybersecurity-feature">
+        <div className="feature-icon">
           <i className="fas fa-balance-scale"></i>
         </div>
-        <h4>Compliance and Risk Assessment</h4>
+        <h4  className='cyber-head'>Compliance and Risk Assessment</h4>
         <p>
           We help assess your compliance with industry standards and regulations, ensuring that your IT environment meets the necessary security benchmarks.
         </p>
@@ -274,6 +275,32 @@ Embarking on your procurement journey with Securoak is both straightforward and 
 
 
 
+<section className="why-partner-section">
+      <div className="why-partner-top">
+        <h2 className="why-partner-title">Why Partner with Securoak?</h2>
+        <p className="why-partner-description  why-partner-description3" >
+        With Securoak’s IT procurement services, you can equip your organization with the tools necessary for success in today’s dynamic environment. By choosing us as your trusted partner, you unlock your potential to drive innovation, efficiency, and sustainable growth, empowering your business to thrive in an increasingly competitive landscape while effectively managing risks through advanced cybersecurity and AI-driven solutions. Partnering with Securoak for your IT procurement needs means gaining access to:
+        </p>
+      </div>
+
+      <div className="why-partner-content">
+        <div className="why-partner-image why-partner-image2">
+          <img src={partner} alt="Securoak" className="image" />
+        </div>
+
+        <div className="why-partner-features">
+          <ul className="partner-features-list partner-features-list2">
+            <li><strong>Expert Consultation: </strong> Our experienced team provides strategic insights to help you make informed purchasing decisions that align with your business objectives, emphasizing security and AI integration.</li>
+            <li><strong>Cost Efficiency:   </strong> We identify solutions that deliver maximum value within your budget, ensuring your investments yield the highest returns.</li>
+            <li><strong>Streamlined Processes: </strong> Our simplified procurement processes save you time and effort, allowing you to focus on your core business activities.</li>
+            <li><strong>•	Tailored Support:    </strong> We offer customized support to ensure that your hardware and software solutions align with your unique business goals and objectives while maintaining a secure and compliant IT environment.</li>
+          </ul>
+        </div>
+      </div>
+
+      
+   
+    </section>
 
 
     <Footer />

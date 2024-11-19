@@ -153,7 +153,7 @@ const DevopSecopOperation = () => {
 
                   </div>
                 </div> */}
-                <a href="/securoak12/devop-secops" className="ser-learn btn-primary mt-4">
+                <a href="/securoak13/devop-secops" className="ser-learn btn-primary mt-4">
                   Know more
                   <span className="arrow_right">
                     <FaArrowRightLong aria-hidden="true" />

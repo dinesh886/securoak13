@@ -23,18 +23,18 @@ export default function Footer() {
   const Offer = [
     {
       Title: "Home",
-      Link: "/securoak12/identity-access-management",
+      Link:  "/securoak13",
     },
-    { Title: "Our Services", Link: "" },
-    { Title: "Events", Link: "" },
-    { Title: "Contact Us", Link: "" },
-    // { Title: "API Development", Link: "/securoak12/api-developement" },
+    { Title: "Our Services", Link: "/securoak13/Digital-Identity-Transformation" },
+    { Title: "Events", Link: "/securoak13/upcoming-events" },
+    { Title: "Contact Us", Link: "/securoak13/ContactUs" },
+    // { Title: "API Development", Link: "/securoak13/api-developement" },
     // { Title: "Demo", Link: "#" },
   ];
 
   return (
     <section className="footer_full" aria-labelledby="footer-heading">
-
+        
       <div
         className="cta overlay-primary py-50 text-center text-lg-start"
         style={{
@@ -53,7 +53,7 @@ export default function Footer() {
             >
               <div className="text-white contact-inner">
                 <h2>Contact us for Securoak Services  </h2>
-                <p>& Explore Securoak Solutions </p>
+              <p>& Explore Securoak Solutions </p>
               </div>
             </div>
             <div className="col-lg-6 text-lg-end align-self-center">
@@ -147,21 +147,23 @@ export default function Footer() {
                     </span>
                   </span>
                 </div>
+
                 <div className="address mt-4">
                   <span className="add-bold">
                     <span>
                       <FaLocationDot />
                     </span>
                     <span className="text">
-                      Securoak Consulting LLP
-                      Office No:334, Regus Shyamal Gardens,
-                      136, Arcot Road, 3rd Floor,
-                      Shyamala Towers, Saligramam,
-                      Chennai, Tamil Nadu - 600093
+                    Securoak Consulting LLP
+Office No:334, Regus Shyamal Gardens,
+136, Arcot Road, 3rd Floor, 
+Shyamala Towers, Saligramam, 
+Chennai, Tamil Nadu - 600093
+
                     </span>
                   </span>
                 </div>
-                {/* <div className="contact_one">
+                <div className="contact_one">
                   <a
                     href="tel:+61288971340"
                     className="phone_number"
@@ -174,8 +176,7 @@ export default function Footer() {
                       <span className="text"> +61 28897 1340</span>
                     </span>
                   </a>
-                </div> */}
-
+                </div>
 
                 <div className="contact_two">
                   <a
@@ -200,14 +201,14 @@ export default function Footer() {
               <div className="total_routes">
                 <div className="routes_pages">
                   <div className="policy_link">
-                    <Link to="/PrivacyPolicy" onClick={(e) => {
-                      setTimeout(() => {
-                        const element = document.getElementById("privacy"); // Make sure the ID matches
-                        if (element) {
-                          element.scrollIntoView({ behavior: "smooth" });
-                        }
-                      }, 0);
-                    }}>
+                    <Link to="/PrivacyPolicy"  onClick={(e) => {
+                        setTimeout(() => {
+                          const element = document.getElementById("privacy"); // Make sure the ID matches
+                          if (element) {
+                            element.scrollIntoView({ behavior: "smooth" });
+                          }
+                        }, 0);
+                      }}>
                       <span className="Policy">Privacy Policy</span>
                     </Link>
                   </div>
@@ -229,14 +230,14 @@ export default function Footer() {
                   </div>
                   <span className="line">|</span>
                   <div className="policy_link">
-                    <Link to="/TermnsandConditions" onClick={(e) => {
-                      setTimeout(() => {
-                        const element = document.getElementById("terms"); // Make sure the ID matches
-                        if (element) {
-                          element.scrollIntoView({ behavior: "smooth" });
-                        }
-                      }, 0);
-                    }} >
+                    <Link to="/TermnsandConditions"  onClick={(e) => {
+                        setTimeout(() => {
+                          const element = document.getElementById("terms"); // Make sure the ID matches
+                          if (element) {
+                            element.scrollIntoView({ behavior: "smooth" });
+                          }
+                        }, 0);
+                      }} >
                       <span className="Terms">Terms & Conditions</span>
                     </Link>
                   </div>
@@ -261,8 +262,8 @@ export default function Footer() {
           </Row>
         </Container>
       </div>
-
+     
     </section>
 
-  );
+);
 }
